@@ -128,11 +128,11 @@
 
 <script>
 import Texture from "~/components/svg/Texture.vue";
-import Cards from "~/components/Cards.vue";
+import Cards from "~/components/cards.vue";
 import InstaIcon from "~/components/svg/InstaIcon.vue";
 import GithubIcon from "~/components/svg/GithubIcon.vue";
 import LinkedinIcon from "~/components/svg/LinkedinIcon.vue";
-import Footer from "~/components/Footer";
+import Footer from "~/components/Footer.vue";
 
 export default {
   components: { Cards, InstaIcon, GithubIcon, LinkedinIcon, Footer },
