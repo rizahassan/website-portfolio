@@ -139,7 +139,7 @@ import GithubIcon from "~/components/svg/GithubIcon.vue";
 import LinkedinIcon from "~/components/svg/LinkedinIcon.vue";
 import Insta2Icon from "~/components/svg/Insta2Icon.vue";
 import Github2Icon from "~/components/svg/Github2Icon.vue";
-import Linkedin2Icon from "~/components/svg/Linkedin2Icon.vue";
+import Linkedin2Icon from "~/components/svg/LinkedIn2Icon.vue";
 
 import Footer from "~/components/Footer.vue";
 
