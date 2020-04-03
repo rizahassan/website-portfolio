@@ -2,14 +2,16 @@
   <main class="max-w-screen-xl font-serif">
     <div class="h-screen w-screen md:h-screen md:w-screen">
       <div class="lg:flex lg:flex-row">
-        <div class="md:w-10/12 lg:w-1/2 lg:pt-24">
+        <div
+          class=" transition-all duration-500 ease-out transform hover:translate-x-4 md:w-10/12 lg:w-1/2 lg:pt-24"
+        >
           <img
             src="~/static/rizaImage.png"
             alt="Riza Hassan's animated image"
           />
         </div>
         <div
-          class="lg:w-1/2 lg:pt-32 pl-4 md:pl-12 font-semibold tracking-widest "
+          class="lg:w-1/2 lg:pt-32 pl-4 md:pl-12 font-semibold tracking-widest transition-all duration-500 transform hover:translate-x-4 "
         >
           <h1 class=" text-gray-800 text-5xl ">Hi,</h1>
 
@@ -37,9 +39,9 @@
     <div class="h-screen w-screen md:h-screen  md:w-screen bg-blue-700">
       <!-- Change the background color -->
       <div class="lg:px-12 ">
-        <div class="text-center pt-4">
+        <div class="text-center pt-4 duration:500  transform  hover:scale-125">
           <h1
-            class=" inline-block text-3xl md:text-5xl md:pt-8 lg:pt-8 text-white font-semibold tracking-widest"
+            class=" inline-block text-3xl md:text-5xl md:pt-8 lg:pt-8 text-white font-semibold tracking-widest  "
           >
             My projects
           </h1>
@@ -54,7 +56,9 @@
     </div>
     <!-- Third section of the page -->
     <div class="h-screen w-screen md:h-screen  md:w-screen">
-      <div class="text-center pt-8 md:pt-8">
+      <div
+        class="text-center pt-8 md:pt-8 duration-500 transform hover:scale-125 "
+      >
         <h1 class="text-3xl md:text-5xl font-semibold tracking-widest">
           Let's get connected !
         </h1>
@@ -65,7 +69,8 @@
           <!-- Instagram icon -->
           <div class="flex flex-row pt-8">
             <div class="text-center w-1/4 h-1/2">
-              <InstaIcon class="inline-block w-1/2" />
+              <InstaIcon class="inline-block w-1/2 hover:invincible" />
+              <Insta2Icon class="inline-block w-1/2 hidden hover:block" />
             </div>
 
             <a
@@ -132,6 +137,10 @@ import Cards from "~/components/cards.vue";
 import InstaIcon from "~/components/svg/InstaIcon.vue";
 import GithubIcon from "~/components/svg/GithubIcon.vue";
 import LinkedinIcon from "~/components/svg/LinkedinIcon.vue";
+import Insta2Icon from "~/components/svg/Insta2Icon.vue";
+import Github2Icon from "~/components/svg/Github2Icon.vue";
+import Linkedin2Icon from "~/components/svg/Linkedin2Icon.vue";
+
 import Footer from "~/components/Footer.vue";
 
 export default {
@@ -154,6 +163,15 @@ export default {
         topic: "Instagram Filter",
         description:
           "Created several Instagram filters for individual and organization purposes. Technologies used are: SparkAR",
+        link: "https://www.instagram.com/a/r/?effect_id=584156795651806"
+      },
+      {
+        show: false,
+        image: "",
+        imageShow: false,
+        topic: "Twitter Covid-19 Bot",
+        description:
+          "A Twitter bot that automatically respond to your tweet with the latest Covid-19 statistics. Technologies used are: Python",
         link: "https://www.instagram.com/a/r/?effect_id=584156795651806"
       }
     ]

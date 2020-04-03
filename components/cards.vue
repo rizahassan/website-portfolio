@@ -6,10 +6,10 @@
       class="py-2 lg:py-0 md:px-8  "
     >
       <div
-        class=" max-w-sm bg-white rounded overflow-hidden shadow-2xl transition ease-in-out duration-700"
+        class=" max-w-sm bg-white rounded overflow-hidden shadow-2xl transition transform hover:translate-x-4 ease-in-out duration-700"
       >
         <div
-          class="px-6 py-4"
+          class="px-6 py-4 "
           @mouseenter="handleVisibility(item, projectList)"
           @mouseleave="handleVisibility(item, projectList)"
         >
@@ -22,7 +22,7 @@
             </p>
             <div class="pt-4 text-right">
               <button
-                class="inline-block rounded py-2 px-4 shadow-lg bg-transparent hover:bg-blue-700 border border-blue-700 hover:text-white "
+                class="inline-block rounded py-2 px-4 shadow-lg bg-transparent hover:bg-blue-700 border border-blue-700 hover:text-white transform duration-500 hover:scale-125 "
               >
                 <a :href="'' + item.link">Learn More</a>
               </button>
