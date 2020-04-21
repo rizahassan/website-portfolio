@@ -172,7 +172,7 @@ export default {
         topic: "Twitter Covid-19 Bot",
         description:
           "A Twitter bot that automatically respond to your tweet with the latest Covid-19 statistics. Technologies used are: Python",
-        link: "https://www.instagram.com/a/r/?effect_id=584156795651806"
+        link: "https://twitter.com/YourCoronaBot"
       }
     ]
   })
