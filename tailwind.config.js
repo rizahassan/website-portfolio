@@ -7,8 +7,8 @@
 module.exports = {
   theme: {
     fontFamily: {
-      serif: ["Archivo", "Comfortaa", "Open Sans", "Helvetica Neue"],
-      sans: ["Georgia", "Cambria", "Times New Roman", "Times", "serif"]
+      serif: ['Archivo', 'Comfortaa', 'Open Sans', 'Helvetica Neue'],
+      sans: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
     }
   },
   variants: {},
