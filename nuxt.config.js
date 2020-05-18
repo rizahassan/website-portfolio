@@ -27,10 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: '~/plugins/typing' },
-    { src: '~/plugins/carousel', ssr: false }
-  ],
+  plugins: ['~/plugins/typing', { src: '~/plugins/carousel', ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
