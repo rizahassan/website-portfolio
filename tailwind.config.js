@@ -11,6 +11,9 @@ module.exports = {
       sans: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
     }
   },
+  purge: {
+    enabled: false
+  },
   variants: {},
   plugins: []
 };

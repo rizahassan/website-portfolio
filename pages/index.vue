@@ -1,5 +1,7 @@
 <template>
   <main class="max-w-screen-xl font-serif">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
     <div id="firstsection" class="h-screen w-screen md:h-screen md:w-screen">
       <div class="lg:flex lg:flex-row">
         <div
