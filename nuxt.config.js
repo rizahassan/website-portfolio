@@ -29,7 +29,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/typing.js', mode: 'client' },
-    { src: '~/plugins/carousel.js', mode: 'client' }
+    { src: '~/plugins/carousel.js', ssr: 'false' }
   ],
   /*
    ** Nuxt.js dev-modules
