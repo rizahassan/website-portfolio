@@ -221,7 +221,6 @@ import Github2Icon from '~/components/svg/Github2Icon.vue';
 import Linkedin2Icon from '~/components/svg/LinkedIn2Icon.vue';
 import DownArrowIcon from '~/components/svg/DownArrow.vue';
 import Footer from '~/components/Footer.vue';
-import { Carousel3d, Slide } from 'vue-carousel-3d';
 
 export default {
   components: {
@@ -230,9 +229,7 @@ export default {
     GithubIcon,
     LinkedinIcon,
     Footer,
-    DownArrowIcon,
-    Carousel3d,
-    Slide
+    DownArrowIcon
   },
   data: () => ({
     slides: 3,
