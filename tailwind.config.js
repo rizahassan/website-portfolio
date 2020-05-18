@@ -11,6 +11,7 @@ module.exports = {
       sans: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
     }
   },
+  prefix: 'tw-',
   purge: {
     enabled: false
   },

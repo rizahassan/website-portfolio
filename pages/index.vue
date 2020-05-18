@@ -1,11 +1,14 @@
 <template>
-  <main class="max-w-screen-xl font-serif">
+  <main class="tw-max-w-screen-xl tw-font-serif">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
-    <div id="firstsection" class="h-screen w-screen md:h-screen md:w-screen">
-      <div class="lg:flex lg:flex-row">
+    <div
+      id="firstsection"
+      class="tw-h-screen tw-w-screen md:tw-h-screen md:tw-w-screen"
+    >
+      <div class="lg:tw-flex lg:tw-flex-row">
         <div
-          class=" transition-all duration-500 ease-out transform hover:translate-x-4 md:w-10/12 lg:w-1/2 lg:pt-24"
+          class=" tw-transition-all tw-duration-500 tw-ease-out tw-transform hover:tw-translate-x-4 md:tw-w-10/12 lg:tw-w-1/2 lg:tw-pt-24"
         >
           <img
             src="~/static/rizaImage.png"
@@ -14,12 +17,16 @@
         </div>
         <!-- Typing animation -->
         <div
-          class="lg:w-1/2 mx-8 mt-20 lg:mt-48 lg:mr-24 pl-4 md:pl-12 rounded-lg shadow-2xl border-gray-600 bg-gray-100 font-semibold tracking-widest transition-all duration-500 transform hover:translate-x-4 "
+          class="lg:tw-w-1/2 tw-mx-8 tw-mt-20 lg:tw-mt-48 lg:tw-mr-24 tw-pl-4 md:tw-pl-12 tw-rounded-lg tw-shadow-2xl tw-border-gray-600 tw-bg-gray-100 tw-font-semibold tw-tracking-widest tw-transition-all tw-duration-500 tw-transform hover:tw-translate-x-4 "
         >
-          <h1 class=" text-gray-800 text-4xl lg:text-5xl font-bold ">Hi,</h1>
+          <h1
+            class=" tw-text-gray-800 tw-text-4xl lg:tw-text-5xl tw-font-bold "
+          >
+            Hi,
+          </h1>
 
           <vue-typed-js
-            class="text-blue-600 text-2xl md:text-5xl lg:pt-4"
+            class="tw-text-blue-600 tw-text-2xl md:tw-text-5xl lg:tw-pt-4"
             :strings="['My name is Riza Hassan']"
             :typeSpeed="40"
             :startDelay="1000"
@@ -27,11 +34,13 @@
           >
             <span class="typing"></span>
           </vue-typed-js>
-          <div class="text-gray-800">
-            <h1 class="text-4xl lg:text-5xl md:pt-18 lg:pt-24 font-bold">
+          <div class="tw-text-gray-800">
+            <h1
+              class="tw-text-4xl lg:tw-text-5xl md:tw-pt-18 lg:tw-pt-24 tw-font-bold"
+            >
               I am
             </h1>
-            <ul class="text-2xl md:text-5xl md:pt-4 md:pl-8">
+            <ul class="tw-text-2xl md:tw-text-5xl md:tw-pt-4 md:tw-pl-8">
               <li>a student</li>
               <li>an adventure seeker</li>
               <li>a developer</li>
@@ -39,53 +48,59 @@
           </div>
         </div>
       </div>
-      <div class="text-center ">
+      <div class="tw-text-center ">
         <DownArrowIcon
           id="downarrow"
           v-scroll-to="'#secondsection'"
-          class="hidden lg:inline-block mt-56 inline-block bottom-0 w-10 h-10"
+          class="tw-hidden lg:tw-inline-block tw-mt-56 tw-inline-block tw-bottom-0 tw-w-10 tw-h-10"
         />
       </div>
     </div>
     <!-- Second section of the page -->
     <div
       id="secondsection"
-      class="h-screen w-screen md:h-screen  md:w-screen bg-grey-800"
+      class="tw-h-screen tw-w-screen md:tw-h-screen  md:tw-w-screen tw-bg-grey-800"
     >
       <!-- Change the background color -->
-      <div class="lg:px-12 ">
-        <div class="text-center pt-4 duration:500  transform  hover:scale-125">
+      <div class="lg:tw-px-12 ">
+        <div
+          class="tw-text-center tw-pt-4 tw-duration:500  tw-transform  tw-hover:scale-125"
+        >
           <h1
-            class=" inline-block text-3xl md:text-5xl md:pt-8 lg:pt-8 lg:pb-8 text-grey-800 font-semibold tracking-widest  "
+            class=" tw-inline-block tw-text-3xl md:tw-text-5xl md:tw-pt-8 lg:tw-pt-8 lg:tw-pb-8 tw-text-grey-800 tw-font-semibold tw-tracking-widest  "
           >
             My projects
           </h1>
         </div>
         <!-- Project Carousel  -->
         <div
-          class="hidden md:block lg:mt-12 lg:mx-40 lg:px-40  bg-gray-400 py-20 border-gray-600 shadow-2xl rounded-full transform duration-700 hover:scale-110"
+          class="tw-hidden md:tw-block lg:tw-mt-12 lg:tw-mx-40 lg:tw-px-40  tw-bg-gray-400 tw-py-20 tw-border-gray-600 tw-shadow-2xl tw-rounded-full tw-transform tw-duration-700 hover:tw-scale-110"
         >
           <carousel-3d
             :controls-visible="true"
             :width="400"
             :height="570"
             :count="10"
-            class="md:w-full"
+            class="md:tw-w-full"
           >
             <slide
               v-for="(item, i) in projectList"
               :key="i"
               :index="i"
-              class="relative"
+              class="tw-relative"
               @mouseclick="handleVisiblity(i)"
             >
               <img v-bind:src="item.image" />
-              <div class="text-center absolute bottom-0 bg-white h-20 w-full">
-                <h1 class="opacity-100 text-gray-800 text-xl text-center">
+              <div
+                class="tw-text-center tw-absolute tw-bottom-0 tw-bg-white tw-h-20 tw-w-full"
+              >
+                <h1
+                  class="tw-opacity-100 tw-text-gray-800 tw-text-xl tw-text-center"
+                >
                   {{ item.topic }}
                 </h1>
                 <button
-                  class="inline-block rounded py-2 px-4 shadow-lg bg-transparent hover:bg-blue-700 border border-blue-700 hover:text-white transform duration-500 hover:scale-125 "
+                  class="tw-inline-block tw-rounded tw-py-2 tw-px-4 tw-shadow-lg tw-bg-transparent hover:tw-bg-blue-700 tw-border tw-border-blue-700 hover:tw-text-white tw-transform tw-duration-500 hover:tw-scale-125 "
                 >
                   <a :href="'' + item.link">Learn More</a>
                 </button>
@@ -97,28 +112,34 @@
             <Cards :projectList="projectList" />
           </div> -->
         </div>
-        <div class=" block md:hidden lg:mt-12 lg:mx-40 lg:px-40  py-20">
+        <div
+          class=" tw-block md:tw-hidden lg:tw-mt-12 lg:tw-mx-40 lg:tw-px-40  tw-py-20"
+        >
           <carousel-3d
             :controls-visible="true"
             :width="300"
             :height="450"
             :count="10"
-            class="md:w-full"
+            class="md:tw-w-full"
           >
             <slide
               v-for="(item, i) in projectList"
               :key="i"
               :index="i"
-              class="relative"
+              class="tw-relative"
               @mouseclick="handleVisiblity(i)"
             >
               <img v-bind:src="item.image" />
-              <div class="text-center absolute bottom-0 bg-white h-20 w-full">
-                <h1 class="opacity-100 text-gray-800 text-xl text-center">
+              <div
+                class="tw-text-center tw-absolute tw-bottom-0 tw-bg-white tw-h-20 tw-w-full"
+              >
+                <h1
+                  class="tw-opacity-100 tw-text-gray-800 tw-text-xl tw-text-center"
+                >
                   {{ item.topic }}
                 </h1>
                 <button
-                  class="inline-block rounded py-2 px-4 shadow-lg bg-transparent hover:bg-blue-700 border border-blue-700 hover:text-white transform duration-500 hover:scale-125 "
+                  class="tw-inline-block tw-rounded tw-py-2 tw-px-4 tw-shadow-lg tw-bg-transparent hover:tw-bg-blue-700 tw-border tw-border-blue-700 hover:tw-text-white tw-transform tw-duration-500 hover:tw-scale-125 "
                 >
                   <a :href="'' + item.link">Learn More</a>
                 </button>
@@ -127,35 +148,42 @@
           </carousel-3d>
         </div>
       </div>
-      <div class="text-center ">
+      <div class="tw-text-center ">
         <DownArrowIcon
           id="downarrow"
           v-scroll-to="'#thirdsection'"
-          class="hidden lg:inline-block  bottom-0 w-10 h-10"
+          class="tw-hidden lg:tw-inline-block  tw-bottom-0 tw-w-10 tw-h-10"
         />
       </div>
     </div>
     <!-- Third section of the page -->
-    <div id="thirdsection" class="h-screen w-screen md:h-screen  md:w-screen">
+    <div
+      id="thirdsection"
+      class="tw-h-screen tw-w-screen md:tw-h-screen  md:tw-w-screen"
+    >
       <div
-        class="text-center pt-8 md:pt-8 duration-500 transform hover:scale-125 "
+        class="tw-text-center tw-pt-8 md:tw-pt-8 tw-duration-500 tw-transform hover:tw-scale-125 "
       >
-        <h1 class="text-3xl md:text-5xl font-semibold tracking-widest">
+        <h1
+          class="tw-text-3xl md:tw-text-5xl tw-font-semibold tw-tracking-widest"
+        >
           Let's get connected !
         </h1>
       </div>
-      <div class="lg:flex lg:flex-row">
+      <div class="lg:tw-flex lg:tw-flex-row">
         <!-- Social media  -->
-        <div class=" mt-40 lg:mt-0 lg:pl-32 lg:pt-24">
+        <div class=" tw-mt-40 lg:tw-mt-0 lg:tw-pl-32 lg:tw-pt-24">
           <!-- Instagram icon -->
-          <div class="flex flex-row pt-8">
-            <div class="text-center w-1/4 h-1/2">
-              <InstaIcon class="inline-block w-1/2 hover:invincible" />
-              <Insta2Icon class="inline-block w-1/2 hidden hover:block" />
+          <div class="tw-flex tw-flex-row tw-pt-8">
+            <div class="tw-text-center tw-w-1/4 tw-h-1/2">
+              <InstaIcon class="tw-inline-block tw-w-1/2 hover:tw-invincible" />
+              <Insta2Icon
+                class="tw-inline-block tw-w-1/2 tw-hidden hover:tw-block"
+              />
             </div>
 
             <a
-              class="w-3/4 lg:pt-6 text-2xl md:text-3xl lg:text-4xl hover:text-blue-800"
+              class="tw-w-3/4 lg:tw-pt-6 tw-text-2xl md:tw-text-3xl lg:tw-text-4xl hover:tw-text-blue-800"
               href="http://instagram.com/riza__hassan"
               target="_blank"
             >
@@ -163,13 +191,13 @@
             </a>
           </div>
           <!-- Github icon -->
-          <div class="flex flex-row pt-8">
-            <div class="text-center w-1/4 h-1/2">
-              <GithubIcon class="inline-block w-1/2" />
+          <div class="tw-flex tw-flex-row tw-pt-8">
+            <div class="tw-text-center tw-w-1/4 tw-h-1/2">
+              <GithubIcon class="tw-inline-block tw-w-1/2" />
             </div>
 
             <a
-              class="w-3/4 lg:pt-6 text-2xl md:text-3xl lg:text-4xl hover:text-blue-800"
+              class="tw-w-3/4 lg:tw-pt-6 tw-text-2xl md:tw-text-3xl lg:tw-text-4xl hover:tw-text-blue-800"
               href="http://github.com/rizahassan"
               target="_blank"
             >
@@ -177,13 +205,13 @@
             </a>
           </div>
           <!-- Linkedin Icon -->
-          <div class="flex flex-row pt-8">
-            <div class="text-center w-1/4 h-1/2">
-              <LinkedinIcon class="inline-block w-1/2" />
+          <div class="tw-flex tw-flex-row tw-pt-8">
+            <div class="tw-text-center tw-w-1/4 tw-h-1/2">
+              <LinkedinIcon class="tw-inline-block tw-w-1/2" />
             </div>
 
             <a
-              class="w-3/4 lg:pt-6 text-2xl md:text-3xl lg:text-4xl hover:text-blue-800"
+              class="tw-w-3/4 lg:tw-pt-6 tw-text-2xl md:tw-text-3xl lg:tw-text-4xl hover:tw-text-blue-800"
               href="http://linkedin.com/in/riza-hassan/"
               target="_blank"
             >
@@ -192,11 +220,13 @@
           </div>
         </div>
         <!-- Youtube Channel -->
-        <div class="py-12 ">
-          <div class=" hidden md:block bg-gray-200  rounded shadow-2xl">
-            <section class="p-4 text-center">
+        <div class="tw-py-12 ">
+          <div
+            class=" tw-hidden md:tw-block tw-bg-gray-200  tw-rounded tw-shadow-2xl"
+          >
+            <section class="tw-p-4 tw-text-center">
               <iframe
-                class="inline-block"
+                class="tw-inline-block"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/eVQ5GypbgXc"
