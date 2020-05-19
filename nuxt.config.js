@@ -28,7 +28,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '@/plugins/typing' },
+    { src: '@/plugins/typing', ssr: false },
     { src: '@/plugins/vue-scrollto', ssr: false },
     { src: '@/plugins/vue-carousel-3d', ssr: false }
   ],
