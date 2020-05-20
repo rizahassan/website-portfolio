@@ -49,7 +49,7 @@
         <DownArrowIcon
           id="downarrow"
           v-scroll-to="'#secondsection'"
-          class=" tw-absolute lg:tw-bottom-0 lg:tw-mb-12 tw-inline-block tw-w-10 tw-h-10"
+          class=" tw-absolute tw-bottom-0 lg:tw-mb-12 tw-inline-block tw-w-10 tw-h-10"
         />
       </div>
     </div>
@@ -59,12 +59,12 @@
       class="tw-h-screen tw-w-screen tw-bg-grey-800 tw-text-center"
     >
       <!-- Change the background color -->
-      <div class="lg:tw-px-12 ">
+      <div class="">
         <div
           class="tw-text-center tw-pt-4 tw-duration:500  tw-transform  tw-hover:scale-125"
         >
           <h1
-            class=" tw-inline-block tw-text-3xl md:tw-text-5xl md:tw-pt-8 lg:tw-pt-8 lg:tw-pb-8 tw-text-grey-800 tw-font-semibold tw-tracking-widest  "
+            class=" tw-inline-block tw-text-3xl md:tw-text-5xl md:tw-mt-8 lg:tw-mt-4  tw-text-grey-800 tw-font-semibold tw-tracking-widest  "
           >
             My projects
           </h1>
@@ -80,7 +80,7 @@
         <DownArrowIcon
           id="downarrow"
           v-scroll-to="'#thirdsection'"
-          class=" tw-inline-block tw-bottom-0 tw-w-10 tw-h-10"
+          class="tw-inline-block tw-bottom-0 lg:tw-mt-8 tw-w-10 tw-h-10"
         />
       </div>
     </div>
