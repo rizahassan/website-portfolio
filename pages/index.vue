@@ -71,7 +71,7 @@
         </div>
         <!-- Project Carousel  -->
         <div
-          class="  tw-inline-block md:tw-mt-4 tw-w-10/12 tw-bg-gray-200 tw-py-12 tw-border-gray-600 tw-shadow-2xl tw-rounded-full "
+          class="  tw-inline-block md:tw-mt-4 tw-w-8/12  tw-bg-gray-200 tw-py-12 tw-border-gray-600 tw-shadow-2xl tw-rounded-full "
         >
           <Carousel :cards="projectList" />
         </div>
