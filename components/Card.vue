@@ -16,9 +16,9 @@
         {{ description }}
       </p>
       <button
-        class="tw-rounded-lg tw-bg-white tw-border tw-border-gray-800 hover:tw-bg-gray-400 tw-p-2"
+        class="tw-rounded-lg tw-bg-white tw-border tw-border-gray-800 tw-shadow-2xl hover:tw-bg-gray-400 tw-p-1"
       >
-        <a :href="'' + link">Learn More</a>
+        <a class="tw-text-sm" :href="'' + link">Learn More</a>
       </button>
     </div>
   </div>

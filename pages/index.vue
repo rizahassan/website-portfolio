@@ -200,7 +200,7 @@ export default {
         imageShow: false,
         topic: 'SpeakToUs website',
         description:
-          'Developed a website for a Malaysian organization that focuses on destigmatizing mental health. Technologies used are: NuxtJS,Vue,TailwindCSS',
+          'Developed a website for a Malaysian organization. Technologies used are: NuxtJS,Vue,TailwindCSS',
         link: 'https://www.speaktous.online'
       },
       {
@@ -209,7 +209,7 @@ export default {
         imageShow: false,
         topic: 'Instagram Filter with Spark AR',
         description:
-          'Created several Instagram filters for individual and organization purposes. Technologies used are: SparkAR',
+          'Created several Instagram filters for individual and organization purposes. Technologies used is: SparkAR',
         link: 'https://www.instagram.com/a/r/?effect_id=584156795651806'
       },
       {
