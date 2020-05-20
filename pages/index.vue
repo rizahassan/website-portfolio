@@ -2,10 +2,7 @@
   <main class="tw-max-w-screen-xl tw-font-serif">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
-    <div
-      id="firstsection"
-      class="tw-h-screen tw-w-screen md:tw-h-screen md:tw-w-screen"
-    >
+    <div id="firstsection" class="tw-h-screen tw-w-screen">
       <div class="lg:tw-flex lg:tw-flex-row">
         <div
           class=" tw-transition-all tw-duration-500 tw-ease-out tw-transform hover:tw-translate-x-4 md:tw-w-10/12 lg:tw-w-1/2 lg:tw-pt-24"
@@ -52,14 +49,14 @@
         <DownArrowIcon
           id="downarrow"
           v-scroll-to="'#secondsection'"
-          class="tw-hidden lg:tw-inline-block tw-mt-56 tw-inline-block tw-bottom-0 tw-w-10 tw-h-10"
+          class=" tw-absolute lg:tw-bottom-0 lg:tw-mb-12 tw-inline-block tw-w-10 tw-h-10"
         />
       </div>
     </div>
     <!-- Second section of the page -->
     <div
       id="secondsection"
-      class="tw-h-screen tw-w-screen md:tw-h-screen  md:tw-w-screen tw-bg-grey-800"
+      class="tw-h-screen tw-w-screen tw-bg-grey-800 tw-text-center"
     >
       <!-- Change the background color -->
       <div class="lg:tw-px-12 ">
@@ -74,7 +71,7 @@
         </div>
         <!-- Project Carousel  -->
         <div
-          class="tw-hidden md:tw-block lg:tw-mt-8 lg:tw-mx-40 lg:tw-px-32  tw-bg-gray-200 tw-py-16 tw-border-gray-600 tw-shadow-2xl tw-rounded-full tw-transform tw-duration-700 hover:tw-scale-110"
+          class="  tw-inline-block md:tw-mt-8  tw-w-10/12 tw-bg-gray-200 tw-py-12 tw-border-gray-600 tw-shadow-2xl tw-rounded-full "
         >
           <Carousel :cards="projectList" />
         </div>
@@ -83,7 +80,7 @@
         <DownArrowIcon
           id="downarrow"
           v-scroll-to="'#thirdsection'"
-          class="tw-hidden lg:tw-inline-block  tw-bottom-0 tw-w-10 tw-h-10"
+          class=" tw-inline-block tw-bottom-0 tw-w-10 tw-h-10"
         />
       </div>
     </div>

@@ -1,23 +1,30 @@
 <template>
   <div class="">
-    <div class="card-carousel tw-flex tw-flex-row">
-      <ArrowButton
-        arrowType="leftarrow"
-        @click.native="showPrevElement"
-        :disabled="this.reachedMaxLeft"
-      />
+    <div class="card-carousel tw-flex tw-flex-row  ">
+      <div class="tw-w-1/4 tw-flex tw-items-center tw-justify-center">
+        <ArrowButton
+          arrowType="leftarrow"
+          @click.native="showPrevElement"
+          :disabled="this.reachedMaxLeft"
+          class=""
+        />
+      </div>
+
       <Card
-        class="current-element "
+        class="current-element tw-w-1/2"
         :topic="currentElement.topic"
         :description="currentElement.description"
         :image="currentElement.image"
         :link="currentElement.link"
       />
-      <ArrowButton
-        arrowType="rightarrow"
-        @click.native="showNextElement"
-        :disabled="this.reachedMaxRight"
-      />
+      <div class="tw-w-1/4 tw-flex tw-items-center tw-justify-center">
+        <ArrowButton
+          arrowType="rightarrow"
+          @click.native="showNextElement"
+          :disabled="this.reachedMaxRight"
+          class=""
+        />
+      </div>
     </div>
     <div class="tw-text-center">
       <Indicators
