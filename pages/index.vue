@@ -74,78 +74,9 @@
         </div>
         <!-- Project Carousel  -->
         <div
-          class="tw-hidden md:tw-block lg:tw-mt-12 lg:tw-mx-40 lg:tw-px-40  tw-bg-gray-400 tw-py-20 tw-border-gray-600 tw-shadow-2xl tw-rounded-full tw-transform tw-duration-700 hover:tw-scale-110"
+          class="tw-hidden md:tw-block lg:tw-mt-8 lg:tw-mx-40 lg:tw-px-32  tw-bg-gray-200 tw-py-16 tw-border-gray-600 tw-shadow-2xl tw-rounded-full tw-transform tw-duration-700 hover:tw-scale-110"
         >
-          <carousel-3d
-            :controls-visible="true"
-            :width="400"
-            :height="570"
-            :count="10"
-            class="md:tw-w-full"
-          >
-            <slide
-              v-for="(item, i) in projectList"
-              :key="i"
-              :index="i"
-              class="tw-relative"
-              @mouseclick="handleVisiblity(i)"
-            >
-              <img v-bind:src="item.image" />
-              <div
-                class="tw-text-center tw-absolute tw-bottom-0 tw-bg-white tw-h-20 tw-w-full"
-              >
-                <h1
-                  class="tw-opacity-100 tw-text-gray-800 tw-text-xl tw-text-center"
-                >
-                  {{ item.topic }}
-                </h1>
-                <button
-                  class="tw-inline-block tw-rounded tw-py-2 tw-px-4 tw-shadow-lg tw-bg-transparent hover:tw-bg-blue-700 tw-border tw-border-blue-700 hover:tw-text-white tw-transform tw-duration-500 hover:tw-scale-125 "
-                >
-                  <a :href="'' + item.link">Learn More</a>
-                </button>
-              </div>
-            </slide>
-          </carousel-3d>
-
-          <!-- <div class="pt-8 md:pt-0 md:flex md:flex-row ">
-            <Cards :projectList="projectList" />
-          </div> -->
-        </div>
-        <div
-          class=" tw-block md:tw-hidden lg:tw-mt-12 lg:tw-mx-40 lg:tw-px-40  tw-py-20"
-        >
-          <carousel-3d
-            :controls-visible="true"
-            :width="300"
-            :height="450"
-            :count="10"
-            class="md:tw-w-full"
-          >
-            <slide
-              v-for="(item, i) in projectList"
-              :key="i"
-              :index="i"
-              class="tw-relative"
-              @mouseclick="handleVisiblity(i)"
-            >
-              <img v-bind:src="item.image" />
-              <div
-                class="tw-text-center tw-absolute tw-bottom-0 tw-bg-white tw-h-20 tw-w-full"
-              >
-                <h1
-                  class="tw-opacity-100 tw-text-gray-800 tw-text-xl tw-text-center"
-                >
-                  {{ item.topic }}
-                </h1>
-                <button
-                  class="tw-inline-block tw-rounded tw-py-2 tw-px-4 tw-shadow-lg tw-bg-transparent hover:tw-bg-blue-700 tw-border tw-border-blue-700 hover:tw-text-white tw-transform tw-duration-500 hover:tw-scale-125 "
-                >
-                  <a :href="'' + item.link">Learn More</a>
-                </button>
-              </div>
-            </slide>
-          </carousel-3d>
+          <Carousel :cards="projectList" />
         </div>
       </div>
       <div class="tw-text-center ">
@@ -244,7 +175,7 @@
 
 <script>
 import Texture from '~/components/svg/Texture.vue';
-import Cards from '~/components/cards.vue';
+import Carousel from '~/components/Carousel.vue';
 import InstaIcon from '~/components/svg/InstaIcon.vue';
 import GithubIcon from '~/components/svg/GithubIcon.vue';
 import LinkedinIcon from '~/components/svg/LinkedinIcon.vue';
@@ -256,7 +187,7 @@ import Footer from '~/components/Footer.vue';
 
 export default {
   components: {
-    Cards,
+    Carousel,
     InstaIcon,
     GithubIcon,
     LinkedinIcon,
@@ -268,7 +199,7 @@ export default {
     projectList: [
       {
         show: true,
-        image: require('../static/speaktous.png'),
+        image: 'speaktous.png',
         imageShow: false,
         topic: 'SpeakToUs website',
         description:
@@ -277,7 +208,7 @@ export default {
       },
       {
         show: false,
-        image: require('../static/instafilter.png'),
+        image: 'instafilter.png',
         imageShow: false,
         topic: 'Instagram Filter with Spark AR',
         description:
@@ -286,7 +217,7 @@ export default {
       },
       {
         show: false,
-        image: require('../static/twitter-bot.png'),
+        image: 'twitter-bot.png',
         imageShow: false,
         topic: 'Twitter Covid-19 Bot',
         description:

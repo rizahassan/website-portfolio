@@ -1,30 +1,32 @@
 <template>
-  <carousel-3d :width="400" :height="500" :count="10" class="w-full">
-    <slide :index="0" class="" @mouseenter="handleVisibility(show)">
-      <div v-if="show" class="absolute w-auto h-auto ">
-        <h1>Instagram Filter with Spark AR</h1>
-        <p>DESCRIPTION</p>
+  <carousel-3d
+    :controls-visible="true"
+    :width="400"
+    :height="570"
+    :count="10"
+    class="md:tw-w-full"
+  >
+    <slide
+      v-for="(item, i) in projectList"
+      :key="i"
+      :index="i"
+      class="tw-relative"
+      @mouseclick="handleVisiblity(i)"
+    >
+      <img v-bind:src="item.image" />
+      <div
+        class="tw-text-center tw-absolute tw-bottom-0 tw-bg-white tw-h-20 tw-w-full"
+      >
+        <h1 class="tw-opacity-100 tw-text-gray-800 tw-text-xl tw-text-center">
+          {{ item.topic }}
+        </h1>
+        <button
+          class="tw-inline-block tw-rounded tw-py-2 tw-px-4 tw-shadow-lg tw-bg-transparent hover:tw-bg-blue-700 tw-border tw-border-blue-700 hover:tw-text-white tw-transform tw-duration-500 hover:tw-scale-125 "
+        >
+          <a :href="'' + item.link">Learn More</a>
+        </button>
       </div>
-      <img class="hover:opacity-25" src="~/static/instafilter.png" />
     </slide>
-
-    <slide :index="1">
-      <img src="~/static/twitter-bot.png" />
-    </slide>
-
-    <slide :index="2">
-      <img src="https://placehold.it/360x270" />
-    </slide>
-    <slide :index="3">
-      <img src="https://placehold.it/360x270" />
-    </slide>
-    <slide :index="4">
-      <img src="https://placehold.it/360x270" />
-    </slide>
-    <slide :index="5">
-      <img src="https://placehold.it/360x270" />
-    </slide>
-    <div></div>
   </carousel-3d>
 </template>
 
