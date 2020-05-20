@@ -26,7 +26,7 @@
           </h1>
 
           <vue-typed-js
-            class="tw-text-blue-600 tw-text-2xl md:tw-text-5xl lg:tw-pt-4"
+            class="tw-text-blue-600 tw-text-2xl md:tw-text-4xl lg:tw-pt-4"
             :strings="['My name is Riza Hassan']"
             :typeSpeed="40"
             :startDelay="1000"
@@ -36,11 +36,11 @@
           </vue-typed-js>
           <div class="tw-text-gray-800">
             <h1
-              class="tw-text-4xl lg:tw-text-5xl md:tw-pt-18 lg:tw-pt-24 tw-font-bold"
+              class="tw-text-4xl md:tw-text-4xl md:tw-pt-18 lg:tw-pt-24 tw-font-bold"
             >
               I am
             </h1>
-            <ul class="tw-text-2xl md:tw-text-5xl md:tw-pt-4 md:tw-pl-8">
+            <ul class="tw-text-2xl md:tw-text-4xl md:tw-pt-4 md:tw-pl-8">
               <li>a student</li>
               <li>an adventure seeker</li>
               <li>a developer</li>
