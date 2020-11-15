@@ -168,16 +168,16 @@
             </div>
           </div>
 
-          <!-- Mystery
+          <!-- Mystery -->
           <div v-if="answer4 === true" class="tw-flex tw-flex-row tw-mt-12">
             <h2 class="tw-flex tw-justify-center tw-items-center tw-mr-4">
-              02:45 p.m.
+              03:15 p.m.
             </h2>
             <div
               class="tw-w-4/6 tw-pb-4 tw-border-2 tw-border-gray-600 tw-rounded-lg "
             >
               <h3 class="tw-mt-2 tw-font-bold tw-text-center">
-                Buah Tangan
+                A gift
               </h3>
               <p class="tw-mt-2 tw-px-2">
                 I hope y'all like the basic make over! Next time boleh buat full
@@ -185,14 +185,10 @@
                 <br />
                 We're almost at the end of the outing today :( I hope that you
                 enjoy it so far. <br />
-                I promised something before, so I want to end today with
-                something that you can grab and bring it home.
+                I want to end today with something that you and Allisya can grab
+                and bring back home. Check out your email! <br />
+                Grab something from the Typo Store, C15K Suria KLCC!!
               </p>
-              <div class="tw-flex tw-text-center tw-justify-center">
-                <a class=" tw-text-red-400" href="/three" target="_blank"
-                  >Cer tekan sini</a
-                >
-              </div>
 
               <div
                 class="tw-mt-4 tw-flex tw-flex-row tw-items-center tw-justify-center"
@@ -203,12 +199,12 @@
                 ></button>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <!-- End -->
-          <div v-if="answer4 === true" class="tw-flex tw-flex-row tw-mt-12">
+          <div v-if="answer5 === true" class="tw-flex tw-flex-row tw-mt-12">
             <h2 class="tw-flex tw-justify-center tw-items-center tw-mr-4">
-              02:30 p.m.
+              03:30 p.m.
             </h2>
             <div
               class="tw-w-4/6 tw-pb-4 tw-border-2 tw-border-gray-600 tw-rounded-lg "
