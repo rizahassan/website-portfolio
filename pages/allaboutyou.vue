@@ -1,7 +1,7 @@
 <template>
   <main class="tw-max-w-screen-xl tw-font-serif">
     <!-- Hero Image -->
-    <div><img src="allimg.jpg" alt="" /></div>
+    <div><img src="~/static/allimg.jpg" alt="" /></div>
     <!-- Form -->
 
     <div
@@ -106,7 +106,7 @@
                 Teka teki: Apakah nama bahan di bawah? *Kalau tak tahu, taktau
                 la nak cakap apa :P
               </p>
-              <img src="lemon_grass.jpg" />
+              <img src="~/static/lemon_grass.jpg" />
               <p class="tw-mt-4 tw-text-center">
                 Visit the restaurant with the name of the ingredient above on
                 Level 2, Suria KLCC. <br /><br />

@@ -5,6 +5,8 @@
       Lot C42, Concourse Floor, Suria KLCC
     </p>
     <p class="tw-text-center tw-text-2xl">Order details kat bawah :)</p>
-    <div class="tw-mt-12"><img class="tw-mt-12" src="order.png" alt="" /></div>
+    <div class="tw-mt-12">
+      <img class="tw-mt-12" src="~/static/order.png" alt="" />
+    </div>
   </main>
 </template>
