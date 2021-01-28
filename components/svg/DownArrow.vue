@@ -1,34 +1,40 @@
 <template>
-  <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
   <svg
-    version="1.1"
-    id="Capa_1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    x="0px"
-    y="0px"
-    viewBox="0 0 49.656 49.656"
-    style="enable-background:new 0 0 49.656 49.656;"
-    xml:space="preserve"
+    width="32"
+    height="32"
+    ViewBox="0 0 32 32"
   >
-    <path
-      d="M45.414,10.292L24.828,30.878L4.242,10.293L0,14.536l24.828,24.828l24.828-24.829L45.414,10.292z M2.828,14.536l1.414-1.414
-	l20.586,20.585l20.586-20.586l1.414,1.414l-22,22.001L2.828,14.536z"
-    />
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
-    <g></g>
+    <title></title>
+    <defs>
+      <linearGradient y2="1" x2="1" y1="0" x1="0" id="svg_3">
+        <stop offset="0" stop-color="#2ec4b6"></stop>
+        <stop offset="1" stop-color="#d13b49"></stop>
+      </linearGradient>
+    </defs>
+    <g>
+      <title>background</title>
+      <rect
+        fill="#000000"
+        id="canvas_background"
+        height="34"
+        width="34"
+        y="-1"
+        x="-1"
+      ></rect>
+    </g>
+    <g>
+      <title>Layer 1</title>
+      <path
+        fill="url(#svg_3)"
+        id="svg_1"
+        d="m16,1a15,15 0 1 1 -15,15a15,15 0 0 1 15,-15zm0,28a13,13 0 1 0 -13,-13a13,13 0 0 0 13,13z"
+      ></path>
+      <path
+        fill="url(#svg_3)"
+        id="svg_2"
+        d="m10.41,12.13l5.59,5.58l5.59,-5.58a1,1 0 0 1 1.41,0l0,0a1,1 0 0 1 0,1.41l-6.36,6.36a0.91,0.91 0 0 1 -1.28,0l-6.36,-6.36a1,1 0 0 1 0,-1.41l0,0a1,1 0 0 1 1.41,0z"
+      ></path>
+    </g>
   </svg>
 </template>

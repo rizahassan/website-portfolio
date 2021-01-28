@@ -8,12 +8,13 @@
         :class="{ 'dot-selected': currentElementIndex === index }"
       >
         <button
-          class="indicator-btn tw-rounded-full tw-bg-white tw-border tw-border-gray-800 tw-text-white hover:tw-bg-gray-800 hover:tw-text-gray-800"
+          class="indicator-btn tw-rounded-full tw-w-4 tw-h-4 tw-bg-white tw-border tw-border-gray-800 tw-text-white hover:tw-bg-gray-800"
           @click="showElement(index)"
           :disabled="currentElementIndex === index"
-        >
-          HERE
-        </button>
+          :class="[
+            currentElementIndex === index ? 'tw-bg-gray-800' : 'tw-bg-white'
+          ]"
+        ></button>
       </li>
     </ol>
   </div>

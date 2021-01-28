@@ -1,7 +1,9 @@
 <template>
   <div class="">
     <div class="card-carousel tw-flex tw-flex-row  ">
-      <div class="tw-w-1/4 tw-flex tw-items-center tw-justify-center">
+      <div
+        class="tw-w-2/12 md:tw-w-1/12 md:tw-mr-20 tw-flex tw-items-center tw-justify-center"
+      >
         <ArrowButton
           arrowType="leftarrow"
           @click.native="showPrevElement"
@@ -11,13 +13,15 @@
       </div>
 
       <Card
-        class="current-element tw-w-1/2"
+        class="current-element tw-w-8/12 md:tw-w-10/12"
         :topic="currentElement.topic"
         :description="currentElement.description"
         :image="currentElement.image"
         :link="currentElement.link"
       />
-      <div class="tw-w-1/4 tw-flex tw-items-center tw-justify-center">
+      <div
+        class="tw-w-2/12 md:tw-w-1/12 md:tw-ml-20 tw-flex tw-items-center tw-justify-center"
+      >
         <ArrowButton
           arrowType="rightarrow"
           @click.native="showNextElement"

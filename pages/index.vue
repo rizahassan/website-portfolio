@@ -2,61 +2,70 @@
   <main class="tw-max-w-screen-xl tw-font-serif">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
-    <div id="firstsection" class="tw-h-screen tw-w-screen">
+    <div id="firstsection" class="tw-h-screen tw-w-screen tw-bg-black">
       <div class="lg:tw-flex lg:tw-flex-row">
         <div
-          class=" tw-transition-all tw-duration-500 tw-ease-out tw-transform hover:tw-translate-x-4 md:tw-w-10/12 lg:tw-w-1/2 lg:tw-pt-24"
+          class=" tw-text-center tw-transition-all tw-duration-500 tw-ease-out tw-transform hover:tw-translate-x-4 lg:tw-w-1/2 lg:tw-pt-24"
         >
           <img
-            src="~/static/rizaImage.png"
+            src="~/static/rizaImage.jpg"
             alt="Riza Hassan's animated image"
+            class="tw-mt-12 tw-inline-block tw-rounded-full tw-border-2 tw-shadow-lg tw-border-gray-800 tw-w-64 tw-h-64"
           />
         </div>
         <!-- Typing animation -->
         <div
-          class="lg:tw-w-1/2 tw-mx-8 tw-mt-20 lg:tw-mt-48 lg:tw-mr-24 tw-pl-4 md:tw-pl-12 tw-rounded-lg tw-shadow-2xl tw-border-gray-600 tw-bg-gray-100 tw-font-semibold tw-tracking-widest tw-transition-all tw-duration-500 tw-transform hover:tw-translate-x-4 "
+          class="lg:tw-w-1/2 tw-mx-8 md:tw-mx-32 tw-mt-16 lg:tw-mt-48 lg:tw-mr-24 tw-pl-4 md:tw-pl-12 tw-rounded-lg tw-shadow-2xl  tw-font-semibold tw-tracking-widest tw-transition-all tw-duration-500 tw-transform hover:tw-translate-x-4 "
         >
           <h1
-            class=" tw-text-gray-800 tw-text-4xl lg:tw-text-5xl tw-font-bold "
+            class=" tw-font-serif tw-text-white tw-text-4xl lg:tw-text-5xl tw-font-bold "
           >
             Hi,
           </h1>
 
           <vue-typed-js
-            class="tw-text-blue-600 tw-text-2xl md:tw-text-4xl lg:tw-pt-4"
-            :strings="['My name is Riza Hassan']"
+            class="tw-text-white tw-pt-4 tw-text-2xl md:tw-text-4xl lg:tw-pt-4"
+            :strings="['My name is Riza']"
             :typeSpeed="40"
             :startDelay="1000"
             :loop="true"
           >
             <span class="typing"></span>
           </vue-typed-js>
-          <div class="tw-text-gray-800">
-            <h1
-              class="tw-text-4xl md:tw-text-4xl md:tw-pt-18 lg:tw-pt-24 tw-font-bold"
-            >
-              I am
-            </h1>
-            <ul class="tw-text-2xl md:tw-text-4xl md:tw-pt-4 md:tw-pl-8">
-              <li>a student</li>
-              <li>an adventure seeker</li>
-              <li>a developer</li>
-            </ul>
-          </div>
         </div>
       </div>
-      <div class="tw-text-center ">
-        <DownArrowIcon
-          id="downarrow"
-          v-scroll-to="'#secondsection'"
-          class=" tw-absolute tw-bottom-0 lg:tw-mb-12 tw-inline-block tw-w-10 tw-h-10"
-        />
+      <div class="tw-flex tw-flex-row tw-mt-24">
+        <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-24 md:tw-mt-64">
+          <img
+            id="downarrow"
+            src="~/static/downarrow.png"
+            v-scroll-to="'#secondsection'"
+            class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20"
+          />
+        </div>
+        <!-- Social -->
+        <div
+          class="tw-w-3/4 tw-mt-20 md:tw-mt-56 tw-flex tw-flex-col tw-items-end tw-mr-8   "
+        >
+          <a href="https://linkedin.com/in/riza-hassan" target="_blank"
+            ><LinkedinIcon class="tw-h-8 tw-w-8 tw-mb-4 md:tw-h-12 md:tw-w-12"
+          /></a>
+          <a href="https://www.instagram.com/riza__hassan/" target="_blank"
+            ><InstaIcon class="tw-h-8 tw-w-8 tw-mb-2 md:tw-h-12 md:tw-w-12"
+          /></a>
+          <a href="https://github.com/rizahassan" target="_blank"
+            ><GithubIcon class="tw-h-8 tw-w-8 md:tw-h-12 md:tw-w-12"
+          /></a>
+        </div>
       </div>
+
+      <!-- Social Media -->
     </div>
+
     <!-- Second section of the page -->
     <div
       id="secondsection"
-      class="tw-h-screen tw-w-screen tw-bg-grey-800 tw-text-center"
+      class="tw-h-screen tw-w-screen tw-relative tw-bg-grey-800 tw-text-center"
     >
       <!-- Change the background color -->
       <div class="">
@@ -71,114 +80,21 @@
         </div>
         <!-- Project Carousel  -->
         <div
-          class="  tw-inline-block md:tw-mt-4 tw-w-8/12  tw-bg-gray-200 tw-py-12 tw-border-gray-600 tw-shadow-2xl tw-rounded-full "
+          class="tw-inline-block tw-mt-40 tw-flex-wrap md:tw-mt-32 tw-py-12   "
         >
           <Carousel :cards="projectList" />
         </div>
       </div>
-      <div class="tw-text-center ">
-        <DownArrowIcon
-          id="downarrow"
-          v-scroll-to="'#thirdsection'"
-          class="tw-inline-block tw-bottom-0 lg:tw-mt-8 tw-w-10 tw-h-10"
-        />
-      </div>
     </div>
     <!-- Third section of the page -->
-    <div
-      id="thirdsection"
-      class="tw-h-screen tw-w-screen md:tw-h-screen  md:tw-w-screen"
-    >
-      <div
-        class="tw-text-center tw-pt-8 md:tw-pt-8 tw-duration-500 tw-transform hover:tw-scale-125 "
-      >
-        <h1
-          class="tw-text-3xl md:tw-text-5xl tw-font-semibold tw-tracking-widest"
-        >
-          Let's get connected !
-        </h1>
-      </div>
-      <div class="lg:tw-flex lg:tw-flex-row">
-        <!-- Social media  -->
-        <div class=" tw-mt-40 lg:tw-mt-0 lg:tw-pl-32 lg:tw-pt-24">
-          <!-- Instagram icon -->
-          <div class="tw-flex tw-flex-row tw-pt-8">
-            <div class="tw-text-center tw-w-1/4 tw-h-1/2">
-              <InstaIcon class="tw-inline-block tw-w-1/2 hover:tw-invincible" />
-              <Insta2Icon
-                class="tw-inline-block tw-w-1/2 tw-hidden hover:tw-block"
-              />
-            </div>
-
-            <a
-              class="tw-w-3/4 lg:tw-pt-6 tw-text-2xl md:tw-text-3xl lg:tw-text-4xl hover:tw-text-blue-800"
-              href="http://instagram.com/riza__hassan"
-              target="_blank"
-            >
-              @riza__hassan
-            </a>
-          </div>
-          <!-- Github icon -->
-          <div class="tw-flex tw-flex-row tw-pt-8">
-            <div class="tw-text-center tw-w-1/4 tw-h-1/2">
-              <GithubIcon class="tw-inline-block tw-w-1/2" />
-            </div>
-
-            <a
-              class="tw-w-3/4 lg:tw-pt-6 tw-text-2xl md:tw-text-3xl lg:tw-text-4xl hover:tw-text-blue-800"
-              href="http://github.com/rizahassan"
-              target="_blank"
-            >
-              github.com/rizahassan
-            </a>
-          </div>
-          <!-- Linkedin Icon -->
-          <div class="tw-flex tw-flex-row tw-pt-8">
-            <div class="tw-text-center tw-w-1/4 tw-h-1/2">
-              <LinkedinIcon class="tw-inline-block tw-w-1/2" />
-            </div>
-
-            <a
-              class="tw-w-3/4 lg:tw-pt-6 tw-text-2xl md:tw-text-3xl lg:tw-text-4xl hover:tw-text-blue-800"
-              href="http://linkedin.com/in/riza-hassan/"
-              target="_blank"
-            >
-              linkedin.com/in/riza-hassan/
-            </a>
-          </div>
-        </div>
-        <!-- Youtube Channel -->
-        <div class="tw-py-12 ">
-          <div
-            class=" tw-hidden md:tw-block tw-bg-gray-200  tw-rounded tw-shadow-2xl"
-          >
-            <section class="tw-p-4 tw-text-center">
-              <iframe
-                class="tw-inline-block"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/eVQ5GypbgXc"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
 </template>
 
 <script>
-import Texture from '~/components/svg/Texture.vue';
 import Carousel from '~/components/Carousel.vue';
 import InstaIcon from '~/components/svg/InstaIcon.vue';
 import GithubIcon from '~/components/svg/GithubIcon.vue';
 import LinkedinIcon from '~/components/svg/LinkedinIcon.vue';
-import Insta2Icon from '~/components/svg/Insta2Icon.vue';
-import Github2Icon from '~/components/svg/Github2Icon.vue';
-import Linkedin2Icon from '~/components/svg/LinkedIn2Icon.vue';
 import DownArrowIcon from '~/components/svg/DownArrow.vue';
 import Footer from '~/components/Footer.vue';
 
@@ -233,10 +149,7 @@ export default {
 
 <style scoped>
 #firstsection {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1048' height='524' viewBox='0 0 1600 800'%3E%3Cpath fill='%23db2121' d='M1102.5 734.8c2.5-1.2 24.8-8.6 25.6-7.5.5.7-3.9 23.8-4.6 24.5C1123.3 752.1 1107.5 739.5 1102.5 734.8zM1226.3 229.1c0-.1-4.9-9.4-7-14.2-.1-.3-.3-1.1-.4-1.6-.1-.4-.3-.7-.6-.9-.3-.2-.6-.1-.8.1l-13.1 12.3c0 0 0 0 0 0-.2.2-.3.5-.4.8 0 .3 0 .7.2 1 .1.1 1.4 2.5 2.1 3.6 2.4 3.7 6.5 12.1 6.5 12.2.2.3.4.5.7.6.3 0 .5-.1.7-.3 0 0 1.8-2.5 2.7-3.6 1.5-1.6 3-3.2 4.6-4.7 1.2-1.2 1.6-1.4 2.1-1.6.5-.3 1.1-.5 2.5-1.9C1226.5 230.4 1226.6 229.6 1226.3 229.1zM33 770.3C33 770.3 33 770.3 33 770.3c0-.7-.5-1.2-1.2-1.2-.1 0-.3 0-.4.1-1.6.2-14.3.1-22.2 0-.3 0-.6.1-.9.4-.2.2-.4.5-.4.9 0 .2 0 4.9.1 5.9l.4 13.6c0 .3.2.6.4.9.2.2.5.3.8.3 0 0 .1 0 .1 0 7.3-.7 14.7-.9 22-.6.3 0 .7-.1.9-.3.2-.2.4-.6.4-.9C32.9 783.3 32.9 776.2 33 770.3z'/%3E%3Cpath fill='%231f29de' d='M171.1 383.4c1.3-2.5 14.3-22 15.6-21.6.8.3 11.5 21.2 11.5 22.1C198.1 384.2 177.9 384 171.1 383.4zM596.4 711.8c-.1-.1-6.7-8.2-9.7-12.5-.2-.3-.5-1-.7-1.5-.2-.4-.4-.7-.7-.8-.3-.1-.6 0-.8.3L574 712c0 0 0 0 0 0-.2.2-.2.5-.2.9 0 .3.2.7.4.9.1.1 1.8 2.2 2.8 3.1 3.1 3.1 8.8 10.5 8.9 10.6.2.3.5.4.8.4.3 0 .5-.2.6-.5 0 0 1.2-2.8 2-4.1 1.1-1.9 2.3-3.7 3.5-5.5.9-1.4 1.3-1.7 1.7-2 .5-.4 1-.7 2.1-2.4C596.9 713.1 596.8 712.3 596.4 711.8zM727.5 179.9C727.5 179.9 727.5 179.9 727.5 179.9c.6.2 1.3-.2 1.4-.8 0-.1 0-.2 0-.4.2-1.4 2.8-12.6 4.5-19.5.1-.3 0-.6-.2-.8-.2-.3-.5-.4-.8-.5-.2 0-4.7-1.1-5.7-1.3l-13.4-2.7c-.3-.1-.7 0-.9.2-.2.2-.4.4-.5.6 0 0 0 .1 0 .1-.8 6.5-2.2 13.1-3.9 19.4-.1.3 0 .6.2.9.2.3.5.4.8.5C714.8 176.9 721.7 178.5 727.5 179.9zM728.5 178.1c-.1-.1-.2-.2-.4-.2C728.3 177.9 728.4 178 728.5 178.1z'/%3E%3Cg fill='%23FFF'%3E%3Cpath d='M699.6 472.7c-1.5 0-2.8-.8-3.5-2.3-.8-1.9 0-4.2 1.9-5 3.7-1.6 6.8-4.7 8.4-8.5 1.6-3.8 1.7-8.1.2-11.9-.3-.9-.8-1.8-1.2-2.8-.8-1.7-1.8-3.7-2.3-5.9-.9-4.1-.2-8.6 2-12.8 1.7-3.1 4.1-6.1 7.6-9.1 1.6-1.4 4-1.2 5.3.4 1.4 1.6 1.2 4-.4 5.3-2.8 2.5-4.7 4.7-5.9 7-1.4 2.6-1.9 5.3-1.3 7.6.3 1.4 1 2.8 1.7 4.3.5 1.1 1 2.2 1.5 3.3 2.1 5.6 2 12-.3 17.6-2.3 5.5-6.8 10.1-12.3 12.5C700.6 472.6 700.1 472.7 699.6 472.7zM740.4 421.4c1.5-.2 3 .5 3.8 1.9 1.1 1.8.4 4.2-1.4 5.3-3.7 2.1-6.4 5.6-7.6 9.5-1.2 4-.8 8.4 1.1 12.1.4.9 1 1.7 1.6 2.7 1 1.7 2.2 3.5 3 5.7 1.4 4 1.2 8.7-.6 13.2-1.4 3.4-3.5 6.6-6.8 10.1-1.5 1.6-3.9 1.7-5.5.2-1.6-1.4-1.7-3.9-.2-5.4 2.6-2.8 4.3-5.3 5.3-7.7 1.1-2.8 1.3-5.6.5-7.9-.5-1.3-1.3-2.7-2.2-4.1-.6-1-1.3-2.1-1.9-3.2-2.8-5.4-3.4-11.9-1.7-17.8 1.8-5.9 5.8-11 11.2-14C739.4 421.6 739.9 421.4 740.4 421.4zM261.3 590.9c5.7 6.8 9 15.7 9.4 22.4.5 7.3-2.4 16.4-10.2 20.4-3 1.5-6.7 2.2-11.2 2.2-7.9-.1-12.9-2.9-15.4-8.4-2.1-4.7-2.3-11.4 1.8-15.9 3.2-3.5 7.8-4.1 11.2-1.6 1.2.9 1.5 2.7.6 3.9-.9 1.2-2.7 1.5-3.9.6-1.8-1.3-3.6.6-3.8.8-2.4 2.6-2.1 7-.8 9.9 1.5 3.4 4.7 5 10.4 5.1 3.6 0 6.4-.5 8.6-1.6 4.7-2.4 7.7-8.6 7.2-15-.5-7.3-5.3-18.2-13-23.9-4.2-3.1-8.5-4.1-12.9-3.1-3.1.7-6.2 2.4-9.7 5-6.6 5.1-11.7 11.8-14.2 19-2.7 7.7-2.1 15.8 1.9 23.9.7 1.4.1 3.1-1.3 3.7-1.4.7-3.1.1-3.7-1.3-4.6-9.4-5.4-19.2-2.2-28.2 2.9-8.2 8.6-15.9 16.1-21.6 4.1-3.1 8-5.1 11.8-6 6-1.4 12 0 17.5 4C257.6 586.9 259.6 588.8 261.3 590.9z'/%3E%3Ccircle cx='1013.7' cy='153.9' r='7.1'/%3E%3Ccircle cx='1024.3' cy='132.1' r='7.1'/%3E%3Ccircle cx='1037.3' cy='148.9' r='7.1'/%3E%3Cpath d='M1508.7 297.2c-4.8-5.4-9.7-10.8-14.8-16.2 5.6-5.6 11.1-11.5 15.6-18.2 1.2-1.7.7-4.1-1-5.2-1.7-1.2-4.1-.7-5.2 1-4.2 6.2-9.1 11.6-14.5 16.9-4.8-5-9.7-10-14.7-14.9-1.5-1.5-3.9-1.5-5.3 0-1.5 1.5-1.5 3.9 0 5.3 4.9 4.8 9.7 9.8 14.5 14.8-1.1 1.1-2.3 2.2-3.5 3.2-4.1 3.8-8.4 7.8-12.4 12-1.4 1.5-1.4 3.8 0 5.3 0 0 0 0 0 0 1.5 1.4 3.9 1.4 5.3-.1 3.9-4 8.1-7.9 12.1-11.7 1.2-1.1 2.3-2.2 3.5-3.3 4.9 5.3 9.8 10.6 14.6 15.9.1.1.1.1.2.2 1.4 1.4 3.7 1.5 5.2.2C1510 301.2 1510.1 298.8 1508.7 297.2zM327.6 248.6l-.4-2.6c-1.5-11.1-2.2-23.2-2.3-37 0-5.5 0-11.5.2-18.5 0-.7 0-1.5 0-2.3 0-5 0-11.2 3.9-13.5 2.2-1.3 5.1-1 8.5.9 5.7 3.1 13.2 8.7 17.5 14.9 5.5 7.8 7.3 16.9 5 25.7-3.2 12.3-15 31-30 32.1L327.6 248.6zM332.1 179.2c-.2 0-.3 0-.4.1-.1.1-.7.5-1.1 2.7-.3 1.9-.3 4.2-.3 6.3 0 .8 0 1.7 0 2.4-.2 6.9-.2 12.8-.2 18.3.1 12.5.7 23.5 2 33.7 11-2.7 20.4-18.1 23-27.8 1.9-7.2.4-14.8-4.2-21.3l0 0C347 188.1 340 183 335 180.3 333.6 179.5 332.6 179.2 332.1 179.2zM516.3 60.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C517.3 60.4 516.8 60.8 516.3 60.8zM506.1 70.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C506.4 70.5 506.2 70.5 506.1 70.5zM494.1 64.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C494.7 64.3 494.4 64.4 494.1 64.4zM500.5 55.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C500.9 55.3 500.7 55.3 500.5 55.3zM506.7 55c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C507.4 54.8 507.1 55 506.7 55zM1029.3 382.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C1030.3 382.4 1029.8 382.8 1029.3 382.8zM1019.1 392.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C1019.4 392.5 1019.2 392.5 1019.1 392.5zM1007.1 386.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C1007.7 386.3 1007.4 386.4 1007.1 386.4zM1013.5 377.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C1013.9 377.3 1013.7 377.3 1013.5 377.3zM1019.7 377c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C1020.4 376.8 1020.1 377 1019.7 377zM1329.7 573.4c-1.4 0-2.9-.2-4.5-.7-8.4-2.7-16.6-12.7-18.7-20-.4-1.4-.7-2.9-.9-4.4-8.1 3.3-15.5 10.6-15.4 21 0 1.5-1.2 2.7-2.7 2.8 0 0 0 0 0 0-1.5 0-2.7-1.2-2.7-2.7-.1-6.7 2.4-12.9 7-18 3.6-4 8.4-7.1 13.7-8.8.5-6.5 3.1-12.9 7.4-17.4 7-7.4 18.2-8.9 27.3-10.1l.7-.1c1.5-.2 2.9.9 3.1 2.3.2 1.5-.9 2.9-2.3 3.1l-.7.1c-8.6 1.2-18.4 2.5-24 8.4-3 3.2-5 7.7-5.7 12.4 7.9-1 17.7 1.3 24.3 5.7 4.3 2.9 7.1 7.8 7.2 12.7.2 4.3-1.7 8.3-5.2 11.1C1335.2 572.4 1332.6 573.4 1329.7 573.4zM1311 546.7c.1 1.5.4 3 .8 4.4 1.7 5.8 8.7 14.2 15.1 16.3 2.8.9 5.1.5 7.2-1.1 2.7-2.1 3.2-4.8 3.1-6.6-.1-3.2-2-6.4-4.8-8.3C1326.7 547.5 1317.7 545.6 1311 546.7z'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  /* background by SVGBackgrounds.com */
+  /* background-color: #000000; */
 }
 #thirdsection {
   background-color: #ffffff;
