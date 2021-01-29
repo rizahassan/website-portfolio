@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="card-carousel tw-flex tw-flex-row  ">
+    <div class="card-carousel tw-flex tw-flex-row ">
       <div
         class="tw-w-2/12 md:tw-w-1/12 md:tw-mr-20 tw-flex tw-items-center tw-justify-center"
       >
