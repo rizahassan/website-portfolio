@@ -12,7 +12,7 @@
           @click="showElement(index)"
           :disabled="currentElementIndex === index"
           :class="[
-            currentElementIndex === index ? 'tw-bg-gray-800' : 'tw-bg-white'
+            currentElementIndex === index ? 'tw-bg-red-400' : 'tw-bg-white'
           ]"
         ></button>
       </li>
