@@ -33,7 +33,7 @@
             <span class="typing"></span>
           </vue-typed-js>
           <h2 class="tw-mt-2 tw-text-white tw-text-2xl">
-            A student developer that is passionate about user experience.
+            A student developer who is passionate about user experience.
           </h2>
         </div>
       </div>
@@ -54,18 +54,18 @@
       </div>
       <div class="tw-flex tw-flex-row lg:tw-mt-12     ">
         <div
-          class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-16 md:tw-mt-48 lg:tw-mt-40"
+          class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-16 md:tw-mt-20 lg:tw-mt-28"
         >
           <img
             id="downarrow"
             src="~/static/downarrow.png"
             v-scroll-to="'#secondsection'"
-            class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 lg:tw-mt-12"
+            class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 "
           />
         </div>
         <!-- Social -->
         <div
-          class="tw-w-3/4 tw-mt-16 md:tw-mt-40 tw-flex tw-flex-col tw-items-end tw-mr-8   "
+          class="tw-w-3/4 tw-mt-16 lg:tw-mt-24 tw-flex tw-flex-col tw-items-end tw-mr-8   "
         >
           <a href="https://linkedin.com/in/riza-hassan" target="_blank"
             ><LinkedinIcon class="tw-h-8 tw-w-8 tw-mb-4 md:tw-h-12 md:tw-w-12"
@@ -85,8 +85,8 @@
     <div id="secondsection" class="tw-h-screen tw-w-screen tw-bg-black">
       <!-- About Me container -->
       <div class="tw-pt-12 tw-pl-8 lg:tw-pl-24 tw-text-white">
-        <h1 class=" tw-text-3xl md:tw-text-4xl tw-font-bold">About Me</h1>
-        <div class="tw-ml-4 md:tw-text-2xl">
+        <h1 class=" tw-text-3xl tw-font-bold">About Me</h1>
+        <div class="tw-ml-4 ">
           <h2 class="tw-pt-12">Name: Riza Hassan</h2>
           <h2 class="tw-pt-4">
             Email:
@@ -99,37 +99,37 @@
 
       <!-- Education container -->
       <div class="tw-pt-12 tw-pl-8 lg:tw-pl-24 tw-text-white">
-        <h1 class=" tw-text-3xl md:tw-text-4xl tw-font-bold">Education</h1>
+        <h1 class=" tw-text-3xl tw-font-bold">Education</h1>
         <hr class="tw-mt-4 tw-w-10/12" />
 
         <div class="tw-mt-3 tw-pl-4 tw-w-10/12">
-          <p class="tw-font-bold md:tw-text-2xl">
+          <p class="tw-font-bold ">
             University of Wisconsin-Madison
           </p>
-          <p class="tw-pt-2 tw-text-xs md:tw-text-xl">
+          <p class="tw-pt-2 tw-text-xs">
             B.S. in Computer Science
           </p>
-          <p class="tw-pt-2 tw-text-xs md:tw-text-xl">Aug 2019 - May 2021</p>
-          <p class="tw-pt-2 tw-pr-2 tw-text-xs md:tw-text-xl">
+          <p class="tw-pt-2 tw-text-xs ">Aug 2019 - May 2021</p>
+          <p class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base">
             Relevant course: Advanced Data Structures, AI, Database Management
             Systems, Human-Computer Interaction, Computer Vision
           </p>
         </div>
         <hr class=" tw-mt-4 tw-w-10/12" />
         <div class="tw-mt-3 tw-pl-4 tw-w-10/12">
-          <p class="tw-font-bold md:tw-text-2xl">Everett Community College</p>
-          <p class="tw-pt-2 tw-text-xs md:tw-text-xl">
+          <p class="tw-font-bold l">Everett Community College</p>
+          <p class="tw-pt-2 tw-text-xs ">
             A.A. in Computer Science
           </p>
-          <p class="tw-pt-2 tw-text-xs md:tw-text-xl">Feb 2017 - March 2019</p>
-          <p class="tw-pt-2 tw-pr-2 tw-text-xs md:tw-text-xl">
+          <p class="tw-pt-2 tw-text-xs lg:tw-text-xl">Feb 2017 - March 2019</p>
+          <p class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base">
             Relevant course: Advanced Calculus, Physics III, Linear Algebra,
             Java Programming, C++ Programming
           </p>
         </div>
         <hr class="tw-mt-4 tw-w-10/12" />
       </div>
-      <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-4 md:tw-mt-6  ">
+      <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-4 md:tw-mt-24 ">
         <img
           id="downarrow"
           src="~/static/downarrow.png"
@@ -141,23 +141,23 @@
 
     <!-- Third section of the page -->
     <div id="thirdsection" class="tw-w-screen tw-h-screen tw-bg-black">
-      <div class="tw-pt-6 tw-pl-8 lg:tw-pl-24 tw-text-white">
-        <h1 class=" tw-text-3xl md:tw-text-4xl tw-font-bold">
+      <div class="tw-pt-6 md:tw-pt-10 tw-pl-8 lg:tw-pl-24 tw-text-white">
+        <h1 class=" tw-text-3xl tw-font-bold">
           Relevant Experiences
         </h1>
-        <hr class="tw-mt-4 tw-w-10/12" />
+        <hr class="tw-mt-4 md:tw-mt-12 tw-w-10/12" />
 
         <div class="tw-mt-3 md:tw-my-8 tw-pl-4 tw-w-10/12 md:tw-w-11/12">
-          <p class="tw-font-bold md:tw-text-2xl">
+          <p class="tw-font-bold ">
             DoIT Quality Assurance
           </p>
 
-          <p class="tw-pt-2 tw-text-xs md:tw-text-xl">
+          <p class="tw-pt-2 tw-text-xs">
             Intern
           </p>
 
           <ul
-            class="tw-pt-2 tw-pr-2 tw-text-xs md:tw-text-xl tw-space-y-2 lg:tw-pr-24"
+            class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base tw-space-y-2 lg:tw-pr-24"
           >
             <li>
               Collaborate in an agile environment with a team of 4 interns in
@@ -177,13 +177,13 @@
         </div>
         <hr class=" tw-mt-4 tw-w-10/12" />
         <div class="tw-mt-3 md:tw-mt-8 tw-pl-4 tw-w-10/12">
-          <p class="tw-font-bold md:tw-text-2xl">SpeakToUs Student Org</p>
-          <p class="tw-pt-2 tw-text-xs md:tw-text-xl">
+          <p class="tw-font-bold ">SpeakToUs Student Org</p>
+          <p class="tw-pt-2 tw-text-xs ">
             Head of the Development team
           </p>
 
           <ul
-            class="tw-pt-2 tw-pr-2 tw-text-xs md:tw-text-xl tw-space-y-2 lg:tw-pr-24"
+            class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base tw-space-y-2 lg:tw-pr-24"
           >
             <li>
               Develop a mobile responsive website where users (~10 users/month)
@@ -203,7 +203,7 @@
         </div>
         <hr class="tw-mt-4 tw-w-10/12" />
       </div>
-      <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-4 md:tw-mt-6  ">
+      <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-4 md:tw-mt-16  ">
         <img
           id="downarrow"
           src="~/static/downarrow.png"
@@ -275,7 +275,7 @@ export default {
         imageShow: false,
         topic: 'Instagram Filter with Spark AR',
         description:
-          'Created several Instagram filters for individual and organization purposes. Technologies used is: SparkAR',
+          'Created several Instagram filters for individual and organization purposes. Technology used is: SparkAR',
         link: 'https://www.instagram.com/a/r/?effect_id=584156795651806'
       },
       {
@@ -284,7 +284,7 @@ export default {
         imageShow: false,
         topic: 'Twitter Covid-19 Bot',
         description:
-          'A Twitter bot that automatically respond to your tweet with the latest Covid-19 statistics. Technologies used are: Python',
+          'A Twitter bot that automatically responds to your tweet with the latest Covid-19 statistics. Technology used is: Python',
         link: 'https://twitter.com/YourCoronaBot'
       }
     ]
