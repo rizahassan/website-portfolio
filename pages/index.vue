@@ -36,22 +36,26 @@
             A student developer that is passionate about user experience.
           </h2>
         </div>
-        <div class="tw-text-center  tw-mt-6 md:tw-mt-16">
-          <div class="tw-inline-block  tw-flex-row"></div>
-          <button
-            class="tw-inline-block tw-border-2 tw-border-red-400 hover:tw-bg-red-400 tw-rounded-3xl tw-text-white tw-text-xs md:tw-text-2xl tw-py-2 tw-px-4"
-          >
-            <a href="./Riza_Resume.pdf" target="_blank">My Resume</a>
-          </button>
-          <button
-            class="tw-inline-block  tw-ml-4 tw-border-2 tw-border-red-400 hover:tw-bg-red-400 tw-rounded-3xl tw-text-white tw-text-xs md:tw-text-2xl tw-py-2 tw-px-4"
-          >
-            <a href="mailto:ruhulruzbihan@gmail.com">Chat with me!</a>
-          </button>
-        </div>
+      </div>
+      <div
+        class="tw-text-center lg:tw-text-right  tw-mt-6 md:tw-mt-16 lg:tw-pr-64"
+      >
+        <div class="tw-inline-block  tw-flex-row"></div>
+        <button
+          class="tw-inline-block tw-border-2 tw-border-red-400 hover:tw-bg-red-400 tw-rounded-3xl tw-text-white tw-text-xs md:tw-text-xl tw-py-2 tw-px-4"
+        >
+          <a href="./Riza_Resume.pdf" target="_blank">My Resume</a>
+        </button>
+        <button
+          class="tw-inline-block  tw-ml-4 tw-border-2 tw-border-red-400 hover:tw-bg-red-400 tw-rounded-3xl tw-text-white tw-text-xs md:tw-text-xl tw-py-2 tw-px-4"
+        >
+          <a href="mailto:ruhulruzbihan@gmail.com">Chat with me!</a>
+        </button>
       </div>
       <div class="tw-flex tw-flex-row lg:tw-mt-12     ">
-        <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-16 md:tw-mt-48">
+        <div
+          class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-16 md:tw-mt-48 lg:tw-mt-40"
+        >
           <img
             id="downarrow"
             src="~/static/downarrow.png"
