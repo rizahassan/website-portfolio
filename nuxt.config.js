@@ -28,7 +28,8 @@ export default {
    */
   plugins: [
     { src: '@/plugins/typing', ssr: false },
-    { src: '@/plugins/vue-scrollto', ssr: false }
+    { src: '@/plugins/vue-scrollto', ssr: false },
+    { src: '@/plugins/aos', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules

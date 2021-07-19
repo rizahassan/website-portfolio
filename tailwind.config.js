@@ -9,7 +9,16 @@ module.exports = {
     fontFamily: {
       serif: ['Archivo', 'Comfortaa', 'Open Sans', 'Helvetica Neue'],
       sans: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
+    },
+    extend:{
+      colors:{
+      cyan:{DEFAULT: '#49ada4'}
+    },
+    spacing:{
+      '74':'19rem',
     }
+    }
+    
   },
   prefix: 'tw-',
   purge: {

@@ -12,16 +12,21 @@
     "test": "jest"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.3.1",
     "nuxt": "^2.0.0",
+    "tailwindcss": "^2.2.4",
     "vue": "^2.6.11",
+    "vue-aos": "^2.1.0",
     "vue-scrollto": "^2.18.1",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
+    "postcss": "^8.3.5",
     "vue-jest": "^4.0.0-0"
   }
 }
