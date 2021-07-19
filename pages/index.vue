@@ -19,10 +19,10 @@
         </div>
         <!-- Typing animation -->
         <div
-          class="lg:tw-w-1/2 tw-mx-8 md:tw-mx-32 tw-mt-4 lg:tw-mt-48 lg:tw-mr-24 tw-pl-4 md:tw-pl-12 tw-rounded-lg tw-shadow-2xl  tw-font-semibold tw-tracking-widest tw-transition-all tw-duration-500 tw-transform hover:tw-translate-x-4 "
+          class="lg:tw-w-1/2 tw-mx-10 md:tw-mx-32 tw-mt-4 lg:tw-mt-48 lg:tw-mr-24 tw-pl-4 md:tw-pl-12 tw-rounded-lg tw-shadow-2xl  tw-font-semibold tw-tracking-widest tw-transition-all tw-duration-500 tw-transform hover:tw-translate-x-4 "
         >
           <h1
-            class=" tw-font-serif tw-text-white tw-text-4xl lg:tw-text-5xl tw-font-bold "
+            class=" tw-font-serif tw-text-white tw-text-2xl sm:tw-text-4xl lg:tw-text-5xl tw-font-bold "
           >
             Hi,
           </h1>
@@ -36,7 +36,7 @@
           >
             <span class="typing"></span>
           </vue-typed-js>
-          <h2 class="tw-mt-2 tw-text-white tw-text-2xl">
+          <h2 class="tw-mt-2 tw-text-white tw-text-xl">
             A developer who is passionate about <em class="tw-text-red-400">user experience.</em> 
           </h2>
         </div>
@@ -59,7 +59,7 @@
       <div
         class="tw-w-full tw-flex tw-flex-row tw-justify-between tw-absolute tw-bottom-0"
       >
-        <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-flex ">
+        <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-flex tw-invisible md:tw-visible">
           <img
             id="downarrow"
             src="~/static/downarrow.svg"
@@ -68,7 +68,7 @@
           />
         </div>
         <!-- Social -->
-        <div class="tw-w-3/4 tw-flex tw-flex-col tw-items-end tw-mr-8 tw-mb-4">
+        <div class="tw-w-3/4 tw-flex tw-flex-col tw-items-end tw-mr-4 tw-mb-4">
           <a href="https://linkedin.com/in/riza-hassan" target="_blank"
             ><LinkedinIcon class="tw-h-8 tw-w-8 tw-mb-4 md:tw-h-12 md:tw-w-12"
           /></a>
@@ -151,7 +151,7 @@
         </div>
       </div>
 
-      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20">
+      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 tw-invisible md:tw-visible">
         <img
           id="downarrow"
           src="~/static/downarrow.svg"
@@ -184,12 +184,12 @@
           ></JobsCard>
         </div>
       </div>
-      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 ">
+      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 tw-invisible md:tw-visible">
         <img
           id="downarrow"
           src="~/static/downarrow.svg"
           v-scroll-to="'#fourthsection'"
-          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4"
+          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4 " 
         />
       </div>
     </div>
