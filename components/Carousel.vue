@@ -2,7 +2,7 @@
   <div class="">
     <div class="card-carousel tw-flex tw-flex-row ">
       <div
-        class="tw-w-2/12 md:tw-w-1/12 md:tw-mr-20 tw-flex tw-items-center tw-justify-center"
+        class="tw-w-2/12 md:tw-w-1/12 md:tw-mr-12 tw-flex tw-items-center tw-justify-center"
       >
         <ArrowButton
           arrowType="leftarrow"
@@ -13,14 +13,15 @@
       </div>
 
       <Card
-        class="current-element tw-w-8/12 md:tw-w-10/12"
+        class=""
         :topic="currentElement.topic"
         :description="currentElement.description"
         :image="currentElement.image"
         :link="currentElement.link"
+        :alt="currentElement.alt"
       />
       <div
-        class="tw-w-2/12 md:tw-w-1/12 md:tw-ml-20 tw-flex tw-items-center tw-justify-center"
+        class="tw-w-2/12 md:tw-w-1/12 md:tw-ml-12 tw-flex tw-items-center tw-justify-center"
       >
         <ArrowButton
           arrowType="rightarrow"
