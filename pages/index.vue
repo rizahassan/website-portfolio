@@ -2,7 +2,11 @@
   <main class="tw-max-w-screen-xl tw-font-serif">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
-    <div id="firstsection" class="tw-h-screen tw-w-screen tw-bg-black">
+    <div
+      id="firstsection"
+      class="tw-h-screen tw-w-screen tw-bg-black tw-relative"
+    >
+
       <div class="lg:tw-flex lg:tw-flex-row">
         <div
           class=" tw-text-center tw-transition-all tw-duration-500 tw-ease-out tw-transform hover:tw-translate-x-4 lg:tw-w-1/2 lg:tw-pt-24"
@@ -33,7 +37,7 @@
             <span class="typing"></span>
           </vue-typed-js>
           <h2 class="tw-mt-2 tw-text-white tw-text-2xl">
-            A student developer who is passionate about user experience.
+            A developer who is passionate about <em class="tw-text-red-400">user experience.</em> 
           </h2>
         </div>
       </div>
@@ -49,13 +53,13 @@
         <button
           class="tw-inline-block  tw-ml-4 tw-border-2 tw-border-red-400 hover:tw-bg-red-400 tw-rounded-3xl tw-text-white tw-text-xs md:tw-text-xl tw-py-2 tw-px-4"
         >
-          <a href="mailto:ruhulruzbihan@gmail.com">Chat with me!</a>
+          <a href="mailto:ruhulruzbihan@gmail.com">Email me!</a>
         </button>
       </div>
-      <div class="tw-flex tw-flex-row lg:tw-mt-12     ">
-        <div
-          class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-16 md:tw-mt-20 lg:tw-mt-28"
-        >
+      <div
+        class="tw-w-full tw-flex tw-flex-row tw-justify-between tw-absolute tw-bottom-0"
+      >
+        <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-flex ">
           <img
             id="downarrow"
             src="~/static/downarrow.png"
@@ -64,9 +68,7 @@
           />
         </div>
         <!-- Social -->
-        <div
-          class="tw-w-3/4 tw-mt-16 lg:tw-mt-24 tw-flex tw-flex-col tw-items-end tw-mr-8   "
-        >
+        <div class="tw-w-3/4 tw-flex tw-flex-col tw-items-end tw-mr-8 tw-mb-4">
           <a href="https://linkedin.com/in/riza-hassan" target="_blank"
             ><LinkedinIcon class="tw-h-8 tw-w-8 tw-mb-4 md:tw-h-12 md:tw-w-12"
           /></a>
@@ -82,133 +84,110 @@
       <!-- Social Media -->
     </div>
     <!-- Second section of the page -->
-    <div id="secondsection" class="tw-h-screen tw-w-screen tw-bg-black">
-      <!-- About Me container -->
-      <div class="tw-pt-12 tw-pl-8 lg:tw-pl-24 tw-text-white">
-        <h1 class=" tw-text-3xl tw-font-bold">About Me</h1>
-        <div class="tw-ml-4 ">
-          <h2 class="tw-pt-12">Name: Riza Hassan</h2>
-          <h2 class="tw-pt-4">
-            Email:
-            <a href="mailto:ruhulruzbihan@gmail.com">
-              ruhulruzbihan@gmail.com</a
+    <div
+      id="secondsection"
+      class="tw-h-screen tw-w-screen tw-bg-black tw-relative"
+    >
+    <h1 data-aos="fade-right" data-aos-duration="1000" class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest">
+        Education
+      </h1>
+      <div
+        class="tw-px-4 md:tw-px-36 lg:tw-px-80 tw-pt-12 md:tw-pt-40 tw-flex tw-flex-col"
+      >
+        <div id="college-2017-2019" class="tw-flex tw-flex-row">
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <LineComponent></LineComponent>
+            <div
+              class=" tw-text-center tw-rounded-full tw-p-2 tw-h-14 tw-w-14 tw-text-black tw-bg-cyan tw-border-2 tw-border-white flex tw-items-center tw-justify-center"
             >
-          </h2>
+              2017
+            </div>
+            <LineComponent></LineComponent>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            class="tw-ml-6"
+          >
+            <CollegeCard
+              :collegeName="collegeList[0].collegeName"
+              :cert="collegeList[0].cert"
+              :image="collegeList[0].image"
+              :tags="collegeList[0].tags"
+            ></CollegeCard>
+          </div>
+        </div>
+
+        <div id="college-2019-2021" class="tw-mt-1 tw-flex tw-flex-row">
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <LineComponent></LineComponent>
+            <div
+              class=" tw-text-center tw-rounded-full tw-p-2 tw-h-14 tw-w-14 tw-text-black tw-bg-cyan tw-border-2 tw-border-white"
+            >
+              2019
+            </div>
+            <LineComponent></LineComponent>
+            <div
+              class=" tw-text-center tw-rounded-full tw-p-2 tw-h-14 tw-w-14 tw-text-black tw-bg-cyan tw-border-2 tw-border-white "
+            >
+              2021
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="2000"
+            class="tw-ml-6"
+          >
+            <CollegeCard
+              :collegeName="collegeList[1].collegeName"
+              :cert="collegeList[1].cert"
+              :image="collegeList[1].image"
+              :tags="collegeList[1].tags"
+            ></CollegeCard>
+          </div>
         </div>
       </div>
 
-      <!-- Education container -->
-      <div class="tw-pt-12 tw-pl-8 lg:tw-pl-24 tw-text-white">
-        <h1 class=" tw-text-3xl tw-font-bold">Education</h1>
-        <hr class="tw-mt-4 tw-w-10/12" />
-
-        <div class="tw-mt-3 tw-pl-4 tw-w-10/12">
-          <p class="tw-font-bold ">
-            University of Wisconsin-Madison
-          </p>
-          <p class="tw-pt-2 tw-text-xs">
-            B.S. in Computer Science
-          </p>
-          <p class="tw-pt-2 tw-text-xs ">Aug 2019 - May 2021</p>
-          <p class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base">
-            Relevant course: Advanced Data Structures, AI, Database Management
-            Systems, Human-Computer Interaction, Computer Vision
-          </p>
-        </div>
-        <hr class=" tw-mt-4 tw-w-10/12" />
-        <div class="tw-mt-3 tw-pl-4 tw-w-10/12">
-          <p class="tw-font-bold l">Everett Community College</p>
-          <p class="tw-pt-2 tw-text-xs ">
-            A.A. in Computer Science
-          </p>
-          <p class="tw-pt-2 tw-text-xs lg:tw-text-xl">Feb 2017 - March 2019</p>
-          <p class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base">
-            Relevant course: Advanced Calculus, Physics III, Linear Algebra,
-            Java Programming, C++ Programming
-          </p>
-        </div>
-        <hr class="tw-mt-4 tw-w-10/12" />
-      </div>
-      <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-4 md:tw-mt-24 ">
+      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-24">
         <img
           id="downarrow"
           src="~/static/downarrow.png"
           v-scroll-to="'#thirdsection'"
-          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20"
+          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4 md:tw-ml-6 "
         />
       </div>
     </div>
 
     <!-- Third section of the page -->
-    <div id="thirdsection" class="tw-w-screen tw-h-screen tw-bg-black">
-      <div class="tw-pt-6 md:tw-pt-10 tw-pl-8 lg:tw-pl-24 tw-text-white">
-        <h1 class=" tw-text-3xl tw-font-bold">
-          Relevant Experiences
-        </h1>
-        <hr class="tw-mt-4 md:tw-mt-12 tw-w-10/12" />
-
-        <div class="tw-mt-3 md:tw-my-8 tw-pl-4 tw-w-10/12 md:tw-w-11/12">
-          <p class="tw-font-bold ">
-            DoIT Quality Assurance
-          </p>
-
-          <p class="tw-pt-2 tw-text-xs">
-            Intern
-          </p>
-
-          <ul
-            class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base tw-space-y-2 lg:tw-pr-24"
-          >
-            <li>
-              Collaborate in an agile environment with a team of 4 interns in
-              testing university websites using Cypress to determine potential
-              bugs.
-            </li>
-            <li>
-              Update websites components, such as updating the website cookie
-              notification using JavaScript to ensure the cookie notification
-              displays consistently across different departmental websites.
-            </li>
-            <li>
-              Improve website performance (slowed by large images) to 30% faster
-              by enabling caches and using CDN such as Jetpack on Wordpress.
-            </li>
-          </ul>
+    <div id="thirdsection" class="tw-w-screen tw-h-screen tw-bg-black tw-relative">
+      <h1 data-aos="fade-right" data-aos-duration="1000" class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest">
+        Experience Wallet
+      </h1>
+      <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" class=" tw-pt-64">
+        <div
+          class="tw-h-1/2 tw-flex tw-flex-row tw-justify-center tw-self-center tw-relative"
+          v-for="item in jobList"
+          :key="item.title"
+        >
+          <JobsCard
+            :company="item.company"
+            :title="item.title"
+            :image="item.image"
+            :color="item.color"
+            :date="item.date"
+            :class="item.style"
+          ></JobsCard>
         </div>
-        <hr class=" tw-mt-4 tw-w-10/12" />
-        <div class="tw-mt-3 md:tw-mt-8 tw-pl-4 tw-w-10/12">
-          <p class="tw-font-bold ">SpeakToUs Student Org</p>
-          <p class="tw-pt-2 tw-text-xs ">
-            Head of the Development team
-          </p>
-
-          <ul
-            class="tw-pt-2 tw-pr-2 tw-text-xs lg:tw-text-base tw-space-y-2 lg:tw-pr-24"
-          >
-            <li>
-              Develop a mobile responsive website where users (~10 users/month)
-              can chat anonymously with student agents regarding their mental
-              health situation.
-            </li>
-            <li>
-              Lead the planning, designing, and development of web-related
-              projects assigned to a team of 3 web developers and a graphic
-              designer.
-            </li>
-            <li>
-              Technology used: HTML, TailwindCSS, VueJS, Netlify, Tawk.To. URL:
-              https://speaktous.online
-            </li>
-          </ul>
-        </div>
-        <hr class="tw-mt-4 tw-w-10/12" />
       </div>
-      <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-mt-4 md:tw-mt-16  ">
+      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-24 ">
         <img
           id="downarrow"
           src="~/static/downarrow.png"
           v-scroll-to="'#fourthsection'"
-          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20"
+          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4"
         />
       </div>
     </div>
@@ -221,19 +200,19 @@
       <!-- Change the background color -->
       <div class="">
         <div
-          class="tw-text-center tw-pt-4 tw-duration:500  tw-transform  tw-hover:scale-125"
+          class="tw-text-center tw-pt-4"
         >
-          <h1
-            class="tw-text-white tw-inline-block tw-text-3xl md:tw-text-5xl md:tw-mt-8 lg:tw-mt-4 tw-font-semibold tw-tracking-widest  "
+          <h1 data-aos="fade-right" data-aos-duration="1000"
+            class="tw-text-white tw-italic tw-inline-block tw-text-3xl md:tw-text-5xl tw-mt-8 lg:tw-mt-4 tw-font-semibold tw-tracking-widest  "
           >
-            My projects
+            Projects
           </h1>
         </div>
         <!-- Project Carousel  -->
         <div
           class="tw-inline-block tw-mt-40 tw-flex-wrap md:tw-mt-32 tw-py-12   "
         >
-          <Carousel :cards="projectList" />
+          <Carousel data-aos="fade-up" data-aos-duration="1000" data-aos-dela="500" :cards="projectList" />
         </div>
       </div>
     </div>
@@ -246,7 +225,9 @@ import InstaIcon from '~/components/svg/InstaIcon.vue';
 import GithubIcon from '~/components/svg/GithubIcon.vue';
 import LinkedinIcon from '~/components/svg/LinkedinIcon.vue';
 import DownArrowIcon from '~/components/svg/DownArrow.vue';
-import Footer from '~/components/Footer.vue';
+import CollegeCard from '~/components/CollegeCard.vue';
+import LineComponent from '~/components/Line.vue';
+import JobsCard from '~/components/JobsCard.vue';
 
 export default {
   components: {
@@ -254,15 +235,52 @@ export default {
     InstaIcon,
     GithubIcon,
     LinkedinIcon,
-    Footer,
-    DownArrowIcon
+    DownArrowIcon,
+    CollegeCard,
+    LineComponent,
+    JobsCard
   },
   data: () => ({
     slides: 3,
+    collegeList: [
+      {
+        collegeName: 'Everett Community College',
+        cert: 'Associates of Arts in Computer Science',
+        image: 'evcctrojan.png',
+        tags: ['Advanced Calculus', 'Physics', 'Linear Algebra', 'Java', 'C++']
+      },
+      {
+        collegeName: 'University of Wisconsin-Madison',
+        cert: 'Bachelors of Science in Computer Science',
+        image: 'uwlogo.png',
+        tags: ['Data&Algos', 'AI', 'DBMS', 'Software Security', 'Software Eng']
+      }
+    ],
     projectList: [
       {
         show: true,
-        image: 'speaktous.png',
+        image: 'safedining.gif',
+        alt:"Safe Dining Website gif",
+        imageShow: false,
+        topic: 'Safe Dining website',
+        description:
+          'Developed a mobile responsive web application using MERN stack that allows local small restaurants to update their real-time capacity and COVID-19 procedures.',
+        link: 'https://safe-dining-506.herokuapp.com/'
+      },
+      {
+        show: true,
+        image: 'robinhoodar.jpeg',
+        alt:"Robinhood AR gif",
+        imageShow: false,
+        topic: 'Robinhood AR',
+        description:
+          "Designed an augmented reality application using Python Flask to receive stock information by scanning companies’ or brands' names.",
+        link: 'https://github.com/rizahassan/robinhood-ar'
+      },
+      {
+        show: true,
+        image: 'speaktous.gif',
+        alt: 'Speak to us website gif',
         imageShow: false,
         topic: 'SpeakToUs website',
         description:
@@ -270,22 +288,51 @@ export default {
         link: 'https://www.speaktous.online'
       },
       {
-        show: false,
-        image: 'instafilter.png',
+        show: true,
+        image: 'muslimnews.gif',
+        alt:"Muslim News website gif",
         imageShow: false,
-        topic: 'Instagram Filter with Spark AR',
+        topic: 'MuslimNews',
         description:
-          'Created several Instagram filters for individual and organization purposes. Technology used is: SparkAR',
-        link: 'https://www.instagram.com/a/r/?effect_id=584156795651806'
+          'Developed a mobile responsive web application that allows local small restaurants to update their real-time capacity and COVID-19 procedures.',
+        link: 'https://muslimnews.netlify.app/'
+      },
+    ],
+    jobList: [
+      {
+        company: 'Everett Community College',
+        title: 'Associated Student Body VP of Administration',
+        date: 'November 2017 - March 2019',
+        image: 'evcctrojan.png',
+        color: '#8338ec',
+        style: 'tw-absolute tw-transition tw-duration-500 tw-transform hover:tw--translate-y-56'
       },
       {
-        show: false,
-        image: 'twitter-bot.png',
-        imageShow: false,
-        topic: 'Twitter Covid-19 Bot',
-        description:
-          'A Twitter bot that automatically responds to your tweet with the latest Covid-19 statistics. Technology used is: Python',
-        link: 'https://twitter.com/YourCoronaBot'
+        company: 'UW-Madison Division of Information Technology',
+        title: 'Support Specialist',
+        date: 'Nov 2019 - May 2021',
+        image: 'doit.jpeg',
+        color: '#ff006e',
+        style:
+          'tw-absolute tw-top-8  tw-transition tw-duration-500 tw-transform hover:tw--translate-y-56'
+      },
+      {
+        company: 'UW-Madison Division of Information Technology',
+        title: 'Quality Assurance Intern',
+        date: 'Aug 2020 - May 2021',
+        image: 'doit.jpeg',
+        color: '#ffbe0b',
+        style:
+          'tw-absolute tw-top-16 tw-transition tw-duration-500 tw-transform hover:tw--translate-y-56'
+      },
+      {
+        company: 'SpeakToUs',
+        title: 'Head of the Development team',
+        date: 'Nov 2019 - Current',
+        image: 'stulogo.png',
+        color: '#fb5607',
+        style:
+          'tw-absolute tw-top-24'
       }
     ]
   }),
