@@ -24,8 +24,8 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
     "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-jest": "^25",
-    "jest": "^25",
+    "babel-jest": "^26.5.3",
+    "jest": "^26.5.3",
     "postcss": "^8.3.5",
     "vue-jest": "^4.0.0-0"
   }
