@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <div class="card-carousel tw-flex tw-flex-row tw-justify-center">
+    <div class="card-carousel tw-flex tw-justify-center">
       <div
-        class="tw-w-2/12 md:tw-w-1/12 md:tw-mr-12 tw-flex tw-items-center tw-justify-center"
+        class="tw-w-2/12 md:tw-w-1/12 tw-pr-6 tw-flex tw-items-center tw-justify-center"
       >
         <ArrowButton
           arrowType="leftarrow"
@@ -21,7 +21,7 @@
         :alt="currentElement.alt"
       />
       <div
-        class="tw-w-2/12 md:tw-w-1/12 md:tw-ml-12 tw-flex tw-items-center tw-justify-center"
+        class="tw-w-2/12 md:tw-w-1/12 tw-pl-6 tw-flex tw-items-center tw-justify-center"
       >
         <ArrowButton
           arrowType="rightarrow"

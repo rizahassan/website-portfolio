@@ -92,7 +92,7 @@
         Education
       </h1>
       <div
-        class="tw-px-4 md:tw-px-36 lg:tw-px-80 tw-pt-12 md:tw-pt-40 tw-flex tw-flex-col"
+        class=" tw-px-4 md:tw-px-36 lg:tw-px-80 tw-pt-12 md:tw-pt-40 tw-flex tw-flex-col"
       >
         <div id="college-2017-2019" class="tw-flex tw-flex-row">
           <div data-aos="fade-down" data-aos-duration="1000">
@@ -166,7 +166,7 @@
       <h1 data-aos="fade-right" data-aos-duration="1000" class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest">
         Experience Wallet
       </h1>
-      <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" class=" tw-pt-64">
+      <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" class=" tw-pt-40 md:tw-pt-64">
         <div
           class="tw-h-1/2 tw-flex tw-flex-row tw-justify-center tw-self-center tw-relative"
           v-for="item in jobList"
@@ -179,6 +179,8 @@
             :color="item.color"
             :date="item.date"
             :class="item.style"
+            onclick=""
+            
           ></JobsCard>
         </div>
       </div>
@@ -210,9 +212,9 @@
         </div>
         <!-- Project Carousel  -->
         <div
-          class="tw-w-full tw-flex tw-flex-row tw-justify-center tw-items-center tw-mt-40 md:tw-mt-20"
+          class="tw-w-full tw-max-h-screen tw-flex tw-flex-row tw-justify-center tw-items-center tw-mt-28 md:tw-mt-20"
         >
-          <Carousel class="tw-w-3/4 lg:tw-w-1/2" :cards="projectList" />
+          <Carousel class="tw-w-11/12 lg:tw-w-1/2" :cards="projectList" />
         </div>
       </div>
     </div>
