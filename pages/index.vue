@@ -62,7 +62,7 @@
         <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-flex ">
           <img
             id="downarrow"
-            src="~/static/downarrow.png"
+            src="~/static/downarrow.svg"
             v-scroll-to="'#secondsection'"
             class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 "
           />
@@ -120,7 +120,7 @@
           </div>
         </div>
 
-        <div id="college-2019-2021" class="tw-mt-1 tw-flex tw-flex-row">
+        <div id="college-2019-2021" class="tw-mt-2 tw-flex tw-flex-row">
           <div data-aos="fade-down" data-aos-duration="1000">
             <LineComponent></LineComponent>
             <div
@@ -151,10 +151,10 @@
         </div>
       </div>
 
-      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-24">
+      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20">
         <img
           id="downarrow"
-          src="~/static/downarrow.png"
+          src="~/static/downarrow.svg"
           v-scroll-to="'#thirdsection'"
           class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4 md:tw-ml-6 "
         />
@@ -182,10 +182,10 @@
           ></JobsCard>
         </div>
       </div>
-      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-24 ">
+      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 ">
         <img
           id="downarrow"
-          src="~/static/downarrow.png"
+          src="~/static/downarrow.svg"
           v-scroll-to="'#fourthsection'"
           class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4"
         />
@@ -210,9 +210,9 @@
         </div>
         <!-- Project Carousel  -->
         <div
-          class="tw-inline-block tw-mt-40 tw-flex-wrap md:tw-mt-32 tw-py-12   "
+          class="tw-w-full tw-flex tw-flex-row tw-justify-center tw-items-center tw-mt-40 md:tw-mt-20"
         >
-          <Carousel data-aos="fade-up" data-aos-duration="1000" data-aos-dela="500" :cards="projectList" />
+          <Carousel class="tw-w-3/4 lg:tw-w-1/2" :cards="projectList" />
         </div>
       </div>
     </div>
