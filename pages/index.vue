@@ -329,7 +329,7 @@ export default {
         company: 'SpeakToUs',
         title: 'Head of the Development team',
         date: 'Nov 2019 - Current',
-        image: 'stulogo.png',
+        image: 'stulogo.jpg',
         color: '#fb5607',
         style:
           'tw-absolute tw-top-24'
