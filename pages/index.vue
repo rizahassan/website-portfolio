@@ -296,7 +296,7 @@ export default {
         imageShow: false,
         topic: 'MuslimNews',
         description:
-          'Developed a mobile responsive web application that allows local small restaurants to update their real-time capacity and COVID-19 procedures.',
+          'Participated in a hackathon to develop a web application that shows current Muslim-related news from all around the world. Developed using VueJS.',
         link: 'https://muslimnews.netlify.app/'
       },
     ],
