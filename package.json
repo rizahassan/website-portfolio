@@ -17,6 +17,7 @@
     "nuxt": "^2.0.0",
     "tailwindcss": "^2.2.4",
     "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
     "vue-aos": "^2.1.0",
     "vue-scrollto": "^2.18.1",
     "vue-typed-js": "^0.1.2"
