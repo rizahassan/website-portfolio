@@ -1,12 +1,25 @@
 <template>
   <main class="tw-max-w-screen-xl tw-font-serif">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L7P5HLLRX2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-L7P5HLLRX2');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
     <div
       id="firstsection"
       class="tw-h-screen tw-w-screen tw-bg-black tw-relative"
     >
-
       <div class="lg:tw-flex lg:tw-flex-row">
         <div
           class=" tw-text-center tw-transition-all tw-duration-500 tw-ease-out tw-transform hover:tw-translate-x-4 lg:tw-w-1/2 lg:tw-pt-24"
@@ -37,7 +50,8 @@
             <span class="typing"></span>
           </vue-typed-js>
           <h2 class="tw-mt-2 tw-text-white tw-text-xl">
-            A developer who is passionate about <em class="tw-text-red-400">user experience.</em> 
+            A developer who is passionate about
+            <em class="tw-text-red-400">user experience.</em>
           </h2>
         </div>
       </div>
@@ -59,7 +73,9 @@
       <div
         class="tw-w-full tw-flex tw-flex-row tw-justify-between tw-absolute tw-bottom-0"
       >
-        <div class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-flex tw-invisible md:tw-visible">
+        <div
+          class="tw-w-1/4 tw-ml-4 md:tw-ml-6 tw-flex tw-invisible md:tw-visible"
+        >
           <img
             id="downarrow"
             src="~/static/downarrow.svg"
@@ -88,7 +104,11 @@
       id="secondsection"
       class="tw-h-screen tw-w-screen tw-bg-black tw-relative"
     >
-    <h1 data-aos="fade-right" data-aos-duration="1000" class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest">
+      <h1
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest"
+      >
         Education
       </h1>
       <div
@@ -151,7 +171,9 @@
         </div>
       </div>
 
-      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 tw-invisible md:tw-visible">
+      <div
+        class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 tw-invisible md:tw-visible"
+      >
         <img
           id="downarrow"
           src="~/static/downarrow.svg"
@@ -162,11 +184,23 @@
     </div>
 
     <!-- Third section of the page -->
-    <div id="thirdsection" class="tw-w-screen tw-h-screen tw-bg-black tw-relative">
-      <h1 data-aos="fade-right" data-aos-duration="1000" class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest">
+    <div
+      id="thirdsection"
+      class="tw-w-screen tw-h-screen tw-bg-black tw-relative"
+    >
+      <h1
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class=" tw-pt-8 lg:tw-pt-4 tw-text-center tw-italic tw-text-3xl md:tw-text-5xl tw-text-white tw-font-semibold tw-tracking-widest"
+      >
         Experience Wallet
       </h1>
-      <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" class=" tw-pt-40 md:tw-pt-64">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+        class=" tw-pt-40 md:tw-pt-64"
+      >
         <div
           class="tw-h-1/2 tw-flex tw-flex-row tw-justify-center tw-self-center tw-relative"
           v-for="item in jobList"
@@ -180,16 +214,17 @@
             :date="item.date"
             :class="item.style"
             onclick=""
-            
           ></JobsCard>
         </div>
       </div>
-      <div class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 tw-invisible md:tw-visible">
+      <div
+        class="tw-w-full tw-flex tw-absolute tw-bottom-0 tw-mb-20 tw-invisible md:tw-visible"
+      >
         <img
           id="downarrow"
           src="~/static/downarrow.svg"
           v-scroll-to="'#fourthsection'"
-          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4 " 
+          class=" tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-ml-4 "
         />
       </div>
     </div>
@@ -201,10 +236,10 @@
     >
       <!-- Change the background color -->
       <div class="">
-        <div
-          class="tw-text-center tw-pt-4"
-        >
-          <h1 data-aos="fade-right" data-aos-duration="1000"
+        <div class="tw-text-center tw-pt-4">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
             class="tw-text-white tw-italic tw-inline-block tw-text-3xl md:tw-text-5xl tw-mt-8 lg:tw-mt-4 tw-font-semibold tw-tracking-widest  "
           >
             Projects
@@ -262,7 +297,7 @@ export default {
       {
         show: true,
         image: 'safedining.gif',
-        alt:"Safe Dining Website gif",
+        alt: 'Safe Dining Website gif',
         imageShow: false,
         topic: 'Safe Dining website',
         description:
@@ -272,7 +307,7 @@ export default {
       {
         show: true,
         image: 'robinhoodar.jpeg',
-        alt:"Robinhood AR gif",
+        alt: 'Robinhood AR gif',
         imageShow: false,
         topic: 'Robinhood AR',
         description:
@@ -292,13 +327,13 @@ export default {
       {
         show: true,
         image: 'muslimnews.gif',
-        alt:"Muslim News website gif",
+        alt: 'Muslim News website gif',
         imageShow: false,
         topic: 'MuslimNews',
         description:
           'Participated in a hackathon to develop a web application that shows current Muslim-related news from all around the world. Developed using VueJS.',
         link: 'https://muslimnews.netlify.app/'
-      },
+      }
     ],
     jobList: [
       {
@@ -307,7 +342,8 @@ export default {
         date: 'November 2017 - March 2019',
         image: 'evcctrojan.png',
         color: '#8338ec',
-        style: 'tw-absolute tw-transition tw-duration-500 tw-transform hover:tw--translate-y-56'
+        style:
+          'tw-absolute tw-transition tw-duration-500 tw-transform hover:tw--translate-y-56'
       },
       {
         company: 'UW-Madison Division of Information Technology',
@@ -333,8 +369,7 @@ export default {
         date: 'Nov 2019 - Current',
         image: 'stulogo.jpg',
         color: '#fb5607',
-        style:
-          'tw-absolute tw-top-24'
+        style: 'tw-absolute tw-top-24'
       }
     ]
   }),
